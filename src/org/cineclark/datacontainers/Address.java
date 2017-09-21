@@ -1,5 +1,5 @@
 package org.cineclark.datacontainers;
 
-public class test {
+public class Address {
 
 }
