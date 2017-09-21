@@ -1,0 +1,102 @@
+{
+  "seasonPassName": "Winter Special",
+  "startDate": "2016-12-13 12:00",
+  "endDate": "2017-01-07 12:00",
+  "seasonPassCost": 120.0,
+  "productCode": "b29e",
+  "productType": "S"
+}
+{
+  "refreshmentName": "Labatt Beer-20oz",
+  "refreshmentCost": 4.99,
+  "productCode": "ff23",
+  "productType": "R"
+}
+{
+  "dateTime": "2016-10-21 01:10",
+  "movieName": "A Monster Calls",
+  "address": {
+    "street": "3555 South 140th Plaza",
+    "city": "Omaha",
+    "state": " NE",
+    "zip": " 68144",
+    "country": " USA"
+  },
+  "screenNo": "2A",
+  "pricePerUnit": 21.5,
+  "productCode": "fp12",
+  "productType": "M"
+}
+{
+  "parkingFee": 25.0,
+  "productCode": "90fa",
+  "productType": "P"
+}
+{
+  "dateTime": "2016-09-13 03:30",
+  "movieName": "The Wild Life",
+  "address": {
+    "street": "755 Willard Drive",
+    "city": "Ashwaubenon",
+    "state": " WI",
+    "zip": " 54304",
+    "country": " USA"
+  },
+  "screenNo": "12F",
+  "pricePerUnit": 11.0,
+  "productCode": "1239",
+  "productType": "M"
+}
+{
+  "dateTime": "2016-11-10 10:00",
+  "movieName": "Shut In",
+  "address": {
+    "street": "6301 University Ave",
+    "city": "Cedar Falls",
+    "state": " IA",
+    "zip": " 50613",
+    "country": " USA"
+  },
+  "screenNo": "32D",
+  "pricePerUnit": 25.0,
+  "productCode": "782g",
+  "productType": "M"
+}
+{
+  "parkingFee": 55.0,
+  "productCode": "3289",
+  "productType": "P"
+}
+{
+  "refreshmentName": "Caramel Popcorn",
+  "refreshmentCost": 5.5,
+  "productCode": "32f4",
+  "productType": "R"
+}
+{
+  "seasonPassName": "BlackFriday Deal",
+  "startDate": "2016-11-24 12:00",
+  "endDate": "2016-11-29 12:00",
+  "seasonPassCost": 58.0,
+  "productCode": "3y92",
+  "productType": "S"
+}
+{
+  "parkingFee": 20.0,
+  "productCode": "90fb",
+  "productType": "P"
+}
+{
+  "seasonPassName": "FiveWeeks-Unlimited",
+  "startDate": "2016-10-07 12:00",
+  "endDate": "2016-11-11 12:00",
+  "seasonPassCost": 185.0,
+  "productCode": "xer4",
+  "productType": "S"
+}
+{
+  "refreshmentName": "Double Cheeseburger",
+  "refreshmentCost": 9.0,
+  "productCode": "yp23",
+  "productType": "R"
+}

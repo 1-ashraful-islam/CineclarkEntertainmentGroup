@@ -7,11 +7,11 @@ public class MovieTicket extends Product{
 	private DateTime dateTime;
 	private String movieName;
 	private Address address;
-	private int screenNo;
+	private String screenNo;
 	private double pricePerUnit;
 	
 	public MovieTicket(String productCode, char productType, DateTime dateTime, String movieName, Address address,
-			int screenNo, double pricePerUnit) {
+			String screenNo, double pricePerUnit) {
 		super(productCode, productType);
 		this.dateTime = dateTime;
 		this.movieName = movieName;
@@ -44,11 +44,11 @@ public class MovieTicket extends Product{
 		this.address = address;
 	}
 
-	public int getScreenNo() {
+	public String getScreenNo() {
 		return screenNo;
 	}
 
-	public void setScreenNo(int screenNo) {
+	public void setScreenNo(String screenNo) {
 		this.screenNo = screenNo;
 	}
 
