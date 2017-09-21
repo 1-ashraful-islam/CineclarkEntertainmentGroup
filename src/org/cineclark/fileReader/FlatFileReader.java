@@ -53,6 +53,7 @@
 					Person person = new Person(personCode, lastName, firstName, address);
 					
 					person.setEmail(email);
+//					todo
 
 				}
 			}
