@@ -10,13 +10,12 @@ public class Person {
 	private Address address;
 	private ArrayList<String> email;
 	
-	public Person(String personCode, String firstName, String lastName, Address address, ArrayList<String> email) {
+	public Person(String personCode, String firstName, String lastName, Address address) {
 		super();
 		this.personCode = personCode;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
-		this.email = email;
 	}
 	
 	public String getPersonCode() {
