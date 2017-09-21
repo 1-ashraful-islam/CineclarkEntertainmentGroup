@@ -33,11 +33,11 @@ public class JsonWriter {
 		
 		jsonPrintWriter.close();
 	}
-public void jsonConverter(List<Person> persons) {
+public void jsonConverterCustomer(List<Customer> customers) {
 		
 		//Gson gson = new Gson();
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		File jsonOutput = new File("data/Persons.json");
+		File jsonOutput = new File("data/Customers.json");
 		
 		PrintWriter jsonPrintWriter = null;
 		
@@ -47,13 +47,35 @@ public void jsonConverter(List<Person> persons) {
 			e.printStackTrace();
 		} 
 		
-		for(Person aPerson : persons) {
+		for(Customer aCustomer : customers) {
 			// Use toJson method to convert Person object into a String
-			String personOutput = gson.toJson(aPerson); 
-			jsonPrintWriter.write(personOutput + "\n");
+			String customerOutput = gson.toJson(aCustomer); 
+			jsonPrintWriter.write(customerOutput + "\n");
 		}
 		
 		jsonPrintWriter.close();
 	}
+public void jsonConverterProducts(List<Product> products) {
+	
+	//Gson gson = new Gson();
+	Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	File jsonOutput = new File("data/Products.json");
+	
+	PrintWriter jsonPrintWriter = null;
+	
+	try {
+		jsonPrintWriter = new PrintWriter(jsonOutput);
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	} 
+	
+	for(Product aProduct : products) {
+		// Use toJson method to convert Person object into a String
+		String personOutput = gson.toJson(aProduct); 
+		jsonPrintWriter.write(personOutput + "\n");
+	}
+	
+	jsonPrintWriter.close();
+}
 
 }

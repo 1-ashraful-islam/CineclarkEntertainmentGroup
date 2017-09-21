@@ -28,7 +28,7 @@
 					String personCode = data[0];
 					String personName = data[1];
 					String commaSeperatedAddress= data[2];
-					String emailList = data[3];
+					String emailList[] = data[3].split(",");
 					
 					//Person Name
 					String Name[] = personName.split(",");
@@ -52,9 +52,18 @@
 					// Creates a Person object
 					Person person = new Person(personCode, lastName, firstName, address);
 					
-					person.setEmail(email);
-//					todo
+					ArrayList<String> emailArray = new ArrayList<String>();
+					for ( String e: emailList) {
+						emailArray.add(e);
+						}
+					}
+				
+					
+				return personList;
 
+				} catch(FileNotFoundException e) {
+					System.err.println(e);
 				}
+
 			}
 		}
