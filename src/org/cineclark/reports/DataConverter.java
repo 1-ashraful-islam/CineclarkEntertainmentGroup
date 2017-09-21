@@ -13,13 +13,10 @@ public class DataConverter {
 	
 	public static void main(String[] args) {
 		
-		Person persons1 = new Person(null, null, null, null, null);
-		Person persons2 = new Person(null, null, null, null, null);
 		
-		List<Person> persons = new ArrayList<Person>();
+		List<Person> persons = new ArrayList<Person>(); // TODO add the the persons from the file reader
 		
-		persons.add(persons1);
-		persons.add(persons2);
+
 		// Create a FlatFileReader object
 		/*** 
 		 * This object should Read data from the flat file;
@@ -33,7 +30,7 @@ public class DataConverter {
 		 *Write the ArrayList into a Json file
 		 **/
 		JsonWriter jsonWriter = new JsonWriter();
-		jsonWriter.jsonConverter(persons);
+		jsonWriter.jsonConverterPerson(persons);
 		
 		// Create an XML Writer object
 		/***
