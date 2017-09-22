@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<person>
+  <personCode>944jk</personCode>
+  <firstName>Allen</firstName>
+  <lastName> Barry</lastName>
+  <address>
+    <street>881 Coventry Boulevard</street>
+    <city>San Fransokyo</city>
+    <state>CA</state>
+    <zip>12387</zip>
+    <country>USA</country>
+  </address>
+  <email>
+    <string>the_flash@watchtower.com</string>
+    <string>barry_allen@ccpd.gov</string>
+  </email>
+</person>
+<person>
+  <personCode>306i</personCode>
+  <firstName>Parker</firstName>
+  <lastName> Peter</lastName>
+  <address>
+    <street>1605 42nd Street</street>
+    <city>Isengard</city>
+    <state>WY</state>
+    <zip>31415</zip>
+    <country>USA</country>
+  </address>
+  <email>
+    <string>Photos@dailybugle.com</string>
+    <string>brokekid@avengers.com</string>
+  </email>
+</person>
+<person>
+  <personCode>55bh</personCode>
+  <firstName>Jordan</firstName>
+  <lastName> Hal</lastName>
+  <address>
+    <street>867 Ferris Circle</street>
+    <city>Houston</city>
+    <state>TX</state>
+    <zip>63810</zip>
+    <country>USA</country>
+  </address>
+  <email>
+    <string>Hal@glcorps.com</string>
+    <string>Lt.Jordan@Ferrisairbase.gov</string>
+  </email>
+</person>
+<person>
+  <personCode>23jko</personCode>
+  <firstName>Curry</firstName>
+  <lastName> Arthur</lastName>
+  <address>
+    <street>1968 Penny Lane</street>
+    <city>Saskatoon</city>
+    <state>TO</state>
+    <zip>M8E 2F9</zip>
+    <country>Canada</country>
+  </address>
+  <email>
+    <string>Hal@glcorps.com</string>
+    <string>Lt.Jordan@Ferrisairbase.gov</string>
+  </email>
+</person>
+<person>
+  <personCode>af6t</personCode>
+  <firstName>Prince</firstName>
+  <lastName> Diana</lastName>
+  <address>
+    <street>3434 Washington Street</street>
+    <city>Albany</city>
+    <state>NY</state>
+    <zip>18950-1868</zip>
+    <country>USA</country>
+  </address>
+  <email>
+    <string>dprince@metroartmuseum.gov</string>
+  </email>
+</person>
+<person>
+  <personCode>355f</personCode>
+  <firstName>Hull</firstName>
+  <lastName> Brett</lastName>
+  <address>
+    <street>1409 Center Street</street>
+    <city>Buffalo</city>
+    <state>NY</state>
+    <zip>10860</zip>
+    <country>USA</country>
+  </address>
+  <email>
+    <string>goldenbrett@gmail.com</string>
+    <string>datsyukfan101@crazy.net</string>
+  </email>
+</person>
+<person>
+  <personCode>k17</personCode>
+  <firstName>Stone</firstName>
+  <lastName> Victor</lastName>
+  <address>
+    <street>9838 Bates Avenue</street>
+    <city>Los Angeles</city>
+    <state>CA</state>
+    <zip>61928</zip>
+    <country>USA</country>
+  </address>
+  <email>
+    <string>cyborg@watchtower.com</string>
+  </email>
+</person>

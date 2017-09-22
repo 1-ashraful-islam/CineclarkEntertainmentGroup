@@ -2,26 +2,24 @@
   "type": "G",
   "customerCode": "C001",
   "contact": {
-    "personCode": "231",
-    "firstName": "Baker",
-    "lastName": "Tom",
+    "personCode": "944jk",
+    "firstName": "Allen",
+    "lastName": " Barry",
     "address": {
-      "street": "1 Blue Jays Way",
-      "city": " Toronto",
-      "state": " ON",
-      "zip": " M5V 1J1",
-      "country": " Canada"
+      "street": "881 Coventry Boulevard",
+      "city": "San Fransokyo",
+      "state": "CA",
+      "zip": "12387",
+      "country": "USA"
     },
     "email": [
-      "famousdoc@who.com",
-      "tbaker@cse.unl.edu",
-      "mostfamous@whovian.com",
-      "thedoctor@bbc.com"
+      "the_flash@watchtower.com",
+      "barry_allen@ccpd.gov"
     ]
   },
-  "name": "Clark Consultants",
+  "name": "Beirut International",
   "address": {
-    "street": "259 Concorde Suites",
+    "street": "778 Avery Hall",
     "city": "Lincoln",
     "state": "NE",
     "zip": "68588-0115",
@@ -31,56 +29,24 @@
 {
   "type": "S",
   "customerCode": "C002",
-  "contact": {
-    "personCode": "944c",
-    "firstName": "Castro",
-    "lastName": " Starlin",
-    "address": {
-      "street": "1060 West Addison Street",
-      "city": "Chicago",
-      "state": "IL",
-      "zip": "60613",
-      "country": "USA"
-    },
-    "email": [
-      "scastro@cubs.com",
-      "starlin_castro13@gmail.com"
-    ]
-  },
-  "name": "CAS International Fellows",
+  "name": "Super Saver",
   "address": {
-    "street": "1223 Oldfather Hall",
-    "city": "Lincoln",
+    "street": "6528 East St",
+    "city": "Gothum",
     "state": "NE",
-    "zip": "68503",
+    "zip": "68545",
     "country": "USA"
   }
 }
 {
   "type": "S",
   "customerCode": "C003",
-  "contact": {
-    "personCode": "306a",
-    "firstName": "Sampson",
-    "lastName": " Brock",
-    "address": {
-      "street": "123 N 1st Street",
-      "city": "Omaha",
-      "state": "NE",
-      "zip": "68116",
-      "country": "USA"
-    },
-    "email": [
-      "brock_f_sampson@gmail.com",
-      "bsampson@venture.com"
-    ]
-  },
-  "name": "Valueless Club",
+  "name": "Lex corp",
   "address": {
-    "street": "123 Venture Way",
-    "city": "Culver City",
+    "street": "48632 Boulevard",
+    "city": "Metropolis",
     "state": "CA",
-    "zip": "90230",
+    "zip": "95530",
     "country": "USA"
   }
 }
@@ -88,53 +54,37 @@
   "type": "G",
   "customerCode": "C004",
   "contact": {
-    "personCode": "321f",
-    "firstName": "Fox",
-    "lastName": " Bud",
+    "personCode": "355f",
+    "firstName": "Hull",
+    "lastName": " Brett",
     "address": {
-      "street": "321 Bronx Street",
-      "city": "New York",
+      "street": "1409 Center Street",
+      "city": "Buffalo",
       "state": "NY",
-      "zip": "10004",
+      "zip": "10860",
       "country": "USA"
     },
     "email": [
-      "bfox@gmail.com",
-      "csheen@crazy.net"
+      "goldenbrett@gmail.com",
+      "datsyukfan101@crazy.net"
     ]
   },
-  "name": "Stony Brook",
+  "name": "Apple",
   "address": {
-    "street": "9800 Savage Rd",
-    "city": "Fort Meade",
+    "street": "1563 Fireball Dropper Ave",
+    "city": "Star City",
     "state": "MD",
-    "zip": "20755",
+    "zip": "25065",
     "country": "USA"
   }
 }
 {
   "type": "G",
   "customerCode": "C005",
-  "contact": {
-    "personCode": "bbchar",
-    "firstName": "Ehrmantraut",
-    "lastName": " Kaylee",
-    "address": {
-      "street": "800 West 7th Street",
-      "city": " Albuquerque",
-      "state": " NM",
-      "zip": " 87105",
-      "country": "USA"
-    },
-    "email": [
-      "msmith@who.com",
-      "thedoc@cse.unl.edu"
-    ]
-  },
-  "name": "Hewlett Industries",
+  "name": "Queen Industries",
   "address": {
-    "street": "1060 West Addison",
-    "city": "Chicago",
+    "street": "0025 Double North",
+    "city": "Central City",
     "state": "IL",
     "zip": "60601",
     "country": "USA"
@@ -143,27 +93,52 @@
 {
   "type": "S",
   "customerCode": "C006",
+  "name": "Wayne Tech",
+  "address": {
+    "street": "819 White House Rd.",
+    "city": "Chicago",
+    "state": "NE",
+    "zip": "68450",
+    "country": "USA"
+  }
+}
+{
+  "type": "G",
+  "customerCode": "C007",
+  "name": "Hamilton",
+  "address": {
+    "street": "1600 Pennsylvania",
+    "city": "Couch",
+    "state": "NE",
+    "zip": "68777",
+    "country": "USA"
+  }
+}
+{
+  "type": "S",
+  "customerCode": "C008",
   "contact": {
-    "personCode": "321dr",
-    "firstName": "Baker",
-    "lastName": " C.",
+    "personCode": "23jko",
+    "firstName": "Curry",
+    "lastName": " Arthur",
     "address": {
-      "street": "Avery Hall",
-      "city": "Lincoln",
-      "state": "NE",
-      "zip": "68503",
-      "country": "USA"
+      "street": "1968 Penny Lane",
+      "city": "Saskatoon",
+      "state": "TO",
+      "zip": "M8E 2F9",
+      "country": "Canada"
     },
     "email": [
-      "dr@baker.com"
+      "Hal@glcorps.com",
+      "Lt.Jordan@Ferrisairbase.gov"
     ]
   },
-  "name": "Gregory Smith",
+  "name": "Hammer Tech",
   "address": {
-    "street": "456 West 7th St.",
-    "city": "Omaha",
-    "state": "NE",
-    "zip": "68500",
+    "street": "7 Street",
+    "city": "Cardiff",
+    "state": "WA",
+    "zip": "61860",
     "country": "USA"
   }
 }

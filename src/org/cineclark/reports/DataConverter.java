@@ -40,7 +40,10 @@ public class DataConverter {
 		/***
 		Write the ArrayList into an XML file
 		*/
-		
+		XMLWriter xmlWriter = new XMLWriter();
+		xmlWriter.xmlConverterPerson(persons);
+		xmlWriter.xmlConverterCustomer(customers);
+		xmlWriter.xmlConverterProduct(products);
 	}
 
 }

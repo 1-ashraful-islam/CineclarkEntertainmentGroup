@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<seasonpass>
+  <productCode>b29e</productCode>
+  <productType>S</productType>
+  <seasonPassName>Force Friday</seasonPassName>
+  <startDate>2012-11-19 00:00</startDate>
+  <endDate>2016-03-04 00:00</endDate>
+  <seasonPassCost>581.0</seasonPassCost>
+</seasonpass>
+<refreshments>
+  <productCode>ff23</productCode>
+  <productType>R</productType>
+  <refreshmentName>Keystone Beer-20oz</refreshmentName>
+  <refreshmentCost>4.99</refreshmentCost>
+</refreshments>
+<movieticket>
+  <productCode>fp12</productCode>
+  <productType>M</productType>
+  <dateTime>2017-09-20 10:10</dateTime>
+  <movieName>Enough Pizza</movieName>
+  <address>
+    <street>1286 Wonder City Plaza</street>
+    <city>Gotham</city>
+    <state> AR</state>
+    <zip> 68144</zip>
+    <country> USA</country>
+  </address>
+  <screenNo>2A</screenNo>
+  <pricePerUnit>21.5</pricePerUnit>
+</movieticket>
+<parkingpass>
+  <productCode>90fa</productCode>
+  <productType>P</productType>
+  <parkingFee>57.0</parkingFee>
+</parkingpass>
+<movieticket>
+  <productCode>1239</productCode>
+  <productType>M</productType>
+  <dateTime>2017-05-03 18:40</dateTime>
+  <movieName>Infinity Gauntlet</movieName>
+  <address>
+    <street>755 Wilson Drive</street>
+    <city>Cair Paravel</city>
+    <state> KY</state>
+    <zip> 11110</zip>
+    <country> USA</country>
+  </address>
+  <screenNo>12F</screenNo>
+  <pricePerUnit>81.0</pricePerUnit>
+</movieticket>
+<movieticket>
+  <productCode>782g</productCode>
+  <productType>M</productType>
+  <dateTime>2016-12-10 10:50</dateTime>
+  <movieName>Ring of Power</movieName>
+  <address>
+    <street>1036 Black Gate</street>
+    <city>Mordor</city>
+    <state> IL</state>
+    <zip> 31605</zip>
+    <country> USA</country>
+  </address>
+  <screenNo>32D</screenNo>
+  <pricePerUnit>25.0</pricePerUnit>
+</movieticket>
+<parkingpass>
+  <productCode>3289</productCode>
+  <productType>P</productType>
+  <parkingFee>33.0</parkingFee>
+</parkingpass>
+<refreshments>
+  <productCode>32f4</productCode>
+  <productType>R</productType>
+  <refreshmentName>Soylent Green</refreshmentName>
+  <refreshmentCost>8.5</refreshmentCost>
+</refreshments>
+<seasonpass>
+  <productCode>3y92</productCode>
+  <productType>S</productType>
+  <seasonPassName>Bloody Mary</seasonPassName>
+  <startDate>2016-08-27 00:00</startDate>
+  <endDate>2017-01-24 00:00</endDate>
+  <seasonPassCost>93.0</seasonPassCost>
+</seasonpass>
+<parkingpass>
+  <productCode>90fb</productCode>
+  <productType>P</productType>
+  <parkingFee>48.71</parkingFee>
+</parkingpass>
+<seasonpass>
+  <productCode>xer4</productCode>
+  <productType>S</productType>
+  <seasonPassName>SixWeeks-VeryLimited</seasonPassName>
+  <startDate>2017-07-07 00:00</startDate>
+  <endDate>2016-12-16 00:00</endDate>
+  <seasonPassCost>101.8</seasonPassCost>
+</seasonpass>
+<refreshments>
+  <productCode>yp23</productCode>
+  <productType>R</productType>
+  <refreshmentName>Double Tofu</refreshmentName>
+  <refreshmentCost>19.0</refreshmentCost>
+</refreshments>

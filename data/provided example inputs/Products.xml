@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<seasonpass>
+  <productCode>b29e</productCode>
+  <productType>S</productType>
+  <seasonPassName>Winter Special</seasonPassName>
+  <startDate>
+    <iMillis>1481608800000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+      <org.joda.time.chrono.ISOChronology_-Stub>
+        <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+          <org.joda.time.DateTimeZone_-Stub>
+            <string>America/Chicago</string>
+          </org.joda.time.DateTimeZone_-Stub>
+        </org.joda.time.tz.CachedDateTimeZone>
+      </org.joda.time.chrono.ISOChronology_-Stub>
+    </iChronology>
+  </startDate>
+  <endDate>
+    <iMillis>1483768800000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../startDate/iChronology"/>
+  </endDate>
+  <seasonPassCost>120.0</seasonPassCost>
+</seasonpass>
+<refreshments>
+  <productCode>ff23</productCode>
+  <productType>R</productType>
+  <refreshmentName>Labatt Beer-20oz</refreshmentName>
+  <refreshmentCost>4.99</refreshmentCost>
+</refreshments>
+<movieticket>
+  <productCode>fp12</productCode>
+  <productType>M</productType>
+  <dateTime>
+    <iMillis>1477073400000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+      <org.joda.time.chrono.ISOChronology_-Stub>
+        <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+          <org.joda.time.DateTimeZone_-Stub>
+            <string>America/Chicago</string>
+          </org.joda.time.DateTimeZone_-Stub>
+        </org.joda.time.tz.CachedDateTimeZone>
+      </org.joda.time.chrono.ISOChronology_-Stub>
+    </iChronology>
+  </dateTime>
+  <movieName>A Monster Calls</movieName>
+  <address>
+    <street>3555 South 140th Plaza</street>
+    <city>Omaha</city>
+    <state> NE</state>
+    <zip> 68144</zip>
+    <country> USA</country>
+  </address>
+  <screenNo>2A</screenNo>
+  <pricePerUnit>21.5</pricePerUnit>
+</movieticket>
+<parkingpass>
+  <productCode>90fa</productCode>
+  <productType>P</productType>
+  <parkingFee>25.0</parkingFee>
+</parkingpass>
+<movieticket>
+  <productCode>1239</productCode>
+  <productType>M</productType>
+  <dateTime>
+    <iMillis>1473798600000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+      <org.joda.time.chrono.ISOChronology_-Stub>
+        <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+          <org.joda.time.DateTimeZone_-Stub>
+            <string>America/Chicago</string>
+          </org.joda.time.DateTimeZone_-Stub>
+        </org.joda.time.tz.CachedDateTimeZone>
+      </org.joda.time.chrono.ISOChronology_-Stub>
+    </iChronology>
+  </dateTime>
+  <movieName>The Wild Life</movieName>
+  <address>
+    <street>755 Willard Drive</street>
+    <city>Ashwaubenon</city>
+    <state> WI</state>
+    <zip> 54304</zip>
+    <country> USA</country>
+  </address>
+  <screenNo>12F</screenNo>
+  <pricePerUnit>11.0</pricePerUnit>
+</movieticket>
+<movieticket>
+  <productCode>782g</productCode>
+  <productType>M</productType>
+  <dateTime>
+    <iMillis>1478793600000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+      <org.joda.time.chrono.ISOChronology_-Stub>
+        <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+          <org.joda.time.DateTimeZone_-Stub>
+            <string>America/Chicago</string>
+          </org.joda.time.DateTimeZone_-Stub>
+        </org.joda.time.tz.CachedDateTimeZone>
+      </org.joda.time.chrono.ISOChronology_-Stub>
+    </iChronology>
+  </dateTime>
+  <movieName>Shut In</movieName>
+  <address>
+    <street>6301 University Ave</street>
+    <city>Cedar Falls</city>
+    <state> IA</state>
+    <zip> 50613</zip>
+    <country> USA</country>
+  </address>
+  <screenNo>32D</screenNo>
+  <pricePerUnit>25.0</pricePerUnit>
+</movieticket>
+<parkingpass>
+  <productCode>3289</productCode>
+  <productType>P</productType>
+  <parkingFee>55.0</parkingFee>
+</parkingpass>
+<refreshments>
+  <productCode>32f4</productCode>
+  <productType>R</productType>
+  <refreshmentName>Caramel Popcorn</refreshmentName>
+  <refreshmentCost>5.5</refreshmentCost>
+</refreshments>
+<seasonpass>
+  <productCode>3y92</productCode>
+  <productType>S</productType>
+  <seasonPassName>BlackFriday Deal</seasonPassName>
+  <startDate>
+    <iMillis>1479967200000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+      <org.joda.time.chrono.ISOChronology_-Stub>
+        <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+          <org.joda.time.DateTimeZone_-Stub>
+            <string>America/Chicago</string>
+          </org.joda.time.DateTimeZone_-Stub>
+        </org.joda.time.tz.CachedDateTimeZone>
+      </org.joda.time.chrono.ISOChronology_-Stub>
+    </iChronology>
+  </startDate>
+  <endDate>
+    <iMillis>1480399200000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../startDate/iChronology"/>
+  </endDate>
+  <seasonPassCost>58.0</seasonPassCost>
+</seasonpass>
+<parkingpass>
+  <productCode>90fb</productCode>
+  <productType>P</productType>
+  <parkingFee>20.0</parkingFee>
+</parkingpass>
+<seasonpass>
+  <productCode>xer4</productCode>
+  <productType>S</productType>
+  <seasonPassName>FiveWeeks-Unlimited</seasonPassName>
+  <startDate>
+    <iMillis>1475816400000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" resolves-to="org.joda.time.chrono.ISOChronology$Stub" serialization="custom">
+      <org.joda.time.chrono.ISOChronology_-Stub>
+        <org.joda.time.tz.CachedDateTimeZone resolves-to="org.joda.time.DateTimeZone$Stub" serialization="custom">
+          <org.joda.time.DateTimeZone_-Stub>
+            <string>America/Chicago</string>
+          </org.joda.time.DateTimeZone_-Stub>
+        </org.joda.time.tz.CachedDateTimeZone>
+      </org.joda.time.chrono.ISOChronology_-Stub>
+    </iChronology>
+  </startDate>
+  <endDate>
+    <iMillis>1478844000000</iMillis>
+    <iChronology class="org.joda.time.chrono.ISOChronology" reference="../../startDate/iChronology"/>
+  </endDate>
+  <seasonPassCost>185.0</seasonPassCost>
+</seasonpass>
+<refreshments>
+  <productCode>yp23</productCode>
+  <productType>R</productType>
+  <refreshmentName>Double Cheeseburger</refreshmentName>
+  <refreshmentCost>9.0</refreshmentCost>
+</refreshments>

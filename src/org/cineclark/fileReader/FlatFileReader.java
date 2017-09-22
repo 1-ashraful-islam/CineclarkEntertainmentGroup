@@ -16,7 +16,7 @@ import org.joda.time.format.DateTimeFormat;
 		Scanner sp = null; 
 		{ // this code block reads the persons.dat file and stores person objects in a ArrayList
 			try {
-				sp = new Scanner(new File("data/personsInput.dat"));
+				sp = new Scanner(new File("data/Persons.dat"));
 				String emailList[] = null;
 				sp.nextLine(); // reads the number of records from the first line
 				
@@ -85,7 +85,7 @@ import org.joda.time.format.DateTimeFormat;
 		ArrayList<Customer> customerList = new ArrayList<Customer>();
 		{ // This code block reads the Customers.dat file and makes the customer objects array		
 			try {
-				sc = new Scanner(new File("data/customersInput.dat"));
+				sc = new Scanner(new File("data/Customers.dat"));
 				sc.nextLine(); // reads the number of records from the first line
 				
 				while(sc.hasNext()) {
@@ -151,7 +151,7 @@ import org.joda.time.format.DateTimeFormat;
 			ArrayList<Product> productList = new ArrayList<Product>();
 			{ // This code block reads the Products.dat file and makes the product objects array		
 				try {
-					spr = new Scanner(new File("data/productsInput.dat"));
+					spr = new Scanner(new File("data/Products.dat"));
 					spr.nextLine(); // reads the number of records from the first line
 					Product product = null; //storage for product
 					

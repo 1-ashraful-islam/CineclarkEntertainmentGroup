@@ -91,7 +91,7 @@ private static JsonSerializer<DateTime> serializer = new JsonSerializer<DateTime
   public JsonElement serialize(DateTime dateTime, Type typeOfSrc, JsonSerializationContext 
 	             context) {
  
-	  String dtString = dateTime.toString("yyyy-MM-dd hh:mm");
+	  String dtString = dateTime.toString("yyyy-MM-dd HH:mm");
       return new JsonPrimitive(dtString);
 	  
   }
