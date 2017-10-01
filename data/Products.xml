@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<seasonpass>
+<products><seasonpass>
   <productCode>b29e</productCode>
   <productType>S</productType>
   <seasonPassName>Force Friday</seasonPassName>
@@ -101,3 +101,4 @@
   <refreshmentName>Double Tofu</refreshmentName>
   <refreshmentCost>19.0</refreshmentCost>
 </refreshments>
+</products>

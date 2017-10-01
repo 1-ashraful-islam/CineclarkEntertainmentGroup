@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<person>
+<persons><person>
   <personCode>944jk</personCode>
   <firstName>Allen</firstName>
   <lastName> Barry</lastName>
@@ -10,10 +10,10 @@
     <zip>12387</zip>
     <country>USA</country>
   </address>
-  <email>
-    <string>the_flash@watchtower.com</string>
-    <string>barry_allen@ccpd.gov</string>
-  </email>
+  <emails>
+    <email>the_flash@watchtower.com</email>
+    <email>barry_allen@ccpd.gov</email>
+  </emails>
 </person>
 <person>
   <personCode>306i</personCode>
@@ -26,10 +26,10 @@
     <zip>31415</zip>
     <country>USA</country>
   </address>
-  <email>
-    <string>Photos@dailybugle.com</string>
-    <string>brokekid@avengers.com</string>
-  </email>
+  <emails>
+    <email>Photos@dailybugle.com</email>
+    <email>brokekid@avengers.com</email>
+  </emails>
 </person>
 <person>
   <personCode>55bh</personCode>
@@ -42,10 +42,10 @@
     <zip>63810</zip>
     <country>USA</country>
   </address>
-  <email>
-    <string>Hal@glcorps.com</string>
-    <string>Lt.Jordan@Ferrisairbase.gov</string>
-  </email>
+  <emails>
+    <email>Hal@glcorps.com</email>
+    <email>Lt.Jordan@Ferrisairbase.gov</email>
+  </emails>
 </person>
 <person>
   <personCode>23jko</personCode>
@@ -58,10 +58,10 @@
     <zip>M8E 2F9</zip>
     <country>Canada</country>
   </address>
-  <email>
-    <string>Hal@glcorps.com</string>
-    <string>Lt.Jordan@Ferrisairbase.gov</string>
-  </email>
+  <emails>
+    <email>Hal@glcorps.com</email>
+    <email>Lt.Jordan@Ferrisairbase.gov</email>
+  </emails>
 </person>
 <person>
   <personCode>af6t</personCode>
@@ -74,9 +74,9 @@
     <zip>18950-1868</zip>
     <country>USA</country>
   </address>
-  <email>
-    <string>dprince@metroartmuseum.gov</string>
-  </email>
+  <emails>
+    <email>dprince@metroartmuseum.gov</email>
+  </emails>
 </person>
 <person>
   <personCode>355f</personCode>
@@ -89,10 +89,10 @@
     <zip>10860</zip>
     <country>USA</country>
   </address>
-  <email>
-    <string>goldenbrett@gmail.com</string>
-    <string>datsyukfan101@crazy.net</string>
-  </email>
+  <emails>
+    <email>goldenbrett@gmail.com</email>
+    <email>datsyukfan101@crazy.net</email>
+  </emails>
 </person>
 <person>
   <personCode>k17</personCode>
@@ -105,7 +105,8 @@
     <zip>61928</zip>
     <country>USA</country>
   </address>
-  <email>
-    <string>cyborg@watchtower.com</string>
-  </email>
+  <emails>
+    <email>cyborg@watchtower.com</email>
+  </emails>
 </person>
+</persons>

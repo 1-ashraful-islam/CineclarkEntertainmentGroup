@@ -31,13 +31,16 @@ public class JsonWriter {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} 
+		jsonPrintWriter.write("{\n\"persons\": [\n");
 		
 		for(Person aPerson : persons) {
 			// Use toJson method to convert Person object into a String
-			String personOutput = gson.toJson(aPerson); 
-			jsonPrintWriter.write(personOutput + "\n");
+			String personOutput = gson.toJson(aPerson);
+			
+			jsonPrintWriter.write(personOutput);
+			if (aPerson != persons.get(persons.size()-1)) {jsonPrintWriter.write(",\n");}
 		}
-		
+		jsonPrintWriter.write("\n]}");
 		jsonPrintWriter.close();
 	}
 public void jsonConverterCustomer(List<Customer> customers) {
@@ -53,13 +56,15 @@ public void jsonConverterCustomer(List<Customer> customers) {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} 
-		
+		jsonPrintWriter.write("{\n\"customers\": [\n");	
 		for(Customer aCustomer : customers) {
 			// Use toJson method to convert Person object into a String
 			String customerOutput = gson.toJson(aCustomer); 
-			jsonPrintWriter.write(customerOutput + "\n");
+			jsonPrintWriter.write(customerOutput);
+			if (aCustomer != customers.get(customers.size()-1)) {jsonPrintWriter.write(",\n");}
+			
 		}
-		
+		jsonPrintWriter.write("\n]}");
 		jsonPrintWriter.close();
 	}
 public void jsonConverterProducts(List<Product> products) {
@@ -75,13 +80,17 @@ public void jsonConverterProducts(List<Product> products) {
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 	} 
-	
+	jsonPrintWriter.write("{\n\"products\": [\n");
+
 	for(Product aProduct : products) {
 		// Use toJson method to convert Person object into a String
 		String productOutput = gson.toJson(aProduct);
-		jsonPrintWriter.write(productOutput + "\n");
+		jsonPrintWriter.write(productOutput );
+		if (aProduct != products.get(products.size()-1)) {jsonPrintWriter.write(",\n");}
+
 	}
-	
+
+	jsonPrintWriter.write("\n]}");
 	jsonPrintWriter.close();
 }
 // Custom serializer

@@ -7,12 +7,15 @@ import java.util.List;
 import org.cineclark.datacontainers.*;
 import org.joda.time.DateTime;
 
+
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.Converter;
 import com.thoughtworks.xstream.converters.MarshallingContext;
 import com.thoughtworks.xstream.converters.UnmarshallingContext;
+import com.thoughtworks.xstream.converters.collections.CollectionConverter;
 import com.thoughtworks.xstream.io.HierarchicalStreamReader;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
+import com.thoughtworks.xstream.mapper.ClassAliasingMapper;
 
 public class XMLWriter {
 
@@ -32,12 +35,19 @@ public class XMLWriter {
 		xmlPrintWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n");
 		
 		xstream.alias("person", Person.class); 
-		//xstream.alias("email", Person.getEmail().toString()); TODO find alias to change email name
+		//to change the email field
+		xstream.aliasField("emails", Person.class,"email");
+		ClassAliasingMapper emailsMapper = new ClassAliasingMapper(xstream.getMapper());
+		emailsMapper.addClassAlias("email", String.class);
+		xstream.registerLocalConverter(Person.class,"email", new CollectionConverter(emailsMapper));
+		
+		xmlPrintWriter.write("<persons>");
 		for(Person aPerson : persons) {
 			// Use toXML method to convert Person object into a String
-			String personOutput = xstream.toXML(aPerson);
+			java.lang.String personOutput = xstream.toXML(aPerson);
 			xmlPrintWriter.write(personOutput + "\n");
 		}
+		xmlPrintWriter.write("</persons>");
 		xmlPrintWriter.close();	
 	}
 	
@@ -58,12 +68,19 @@ public class XMLWriter {
 		
 		xstream.alias("generalcustomer", GeneralCustomer.class); 
 		xstream.alias("studentcustomer", StudentCustomer.class);
-		//xstream.alias("email", Person.getEmail().toString()); TODO find alias to change email name
+		//to change the email field
+				xstream.aliasField("emails", Person.class,"email");
+				ClassAliasingMapper emailsMapper = new ClassAliasingMapper(xstream.getMapper());
+				emailsMapper.addClassAlias("email", String.class);
+				xstream.registerLocalConverter(Person.class,"email", new CollectionConverter(emailsMapper));
+
+		xmlPrintWriter.write("<customers>");
 		for(Customer aCustomer : customers) {
 			// Use toXML method to convert Person object into a String
 			String customerOutput = xstream.toXML(aCustomer);
 			xmlPrintWriter.write(customerOutput + "\n");
 		}
+		xmlPrintWriter.write("</customers>");
 		xmlPrintWriter.close();	
 	}
 	
@@ -86,13 +103,15 @@ public class XMLWriter {
 		xstream.alias("seasonpass", SeasonPass.class); 
 		xstream.alias("parkingpass", ParkingPass.class); 
 		xstream.alias("refreshments", Refreshments.class); 
-		//xstream.alias("email", Person.getEmail().toString()); TODO find alias to change email name
+ 
+		xmlPrintWriter.write("<products>");
 		for(Product aProduct : products) {
 			// Use toXML method to convert Person object into a String
 			xstream.registerConverter(new DateTimeConverter());
 			String productOutput = xstream.toXML(aProduct);
 			xmlPrintWriter.write(productOutput + "\n");
 		}
+		xmlPrintWriter.write("</products>");
 		xmlPrintWriter.close();	
 	}
 	

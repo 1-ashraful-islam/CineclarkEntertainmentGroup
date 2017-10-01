@@ -1,4 +1,6 @@
 {
+"persons": [
+{
   "personCode": "944jk",
   "firstName": "Allen",
   "lastName": " Barry",
@@ -13,7 +15,7 @@
     "the_flash@watchtower.com",
     "barry_allen@ccpd.gov"
   ]
-}
+},
 {
   "personCode": "306i",
   "firstName": "Parker",
@@ -29,7 +31,7 @@
     "Photos@dailybugle.com",
     "brokekid@avengers.com"
   ]
-}
+},
 {
   "personCode": "55bh",
   "firstName": "Jordan",
@@ -45,7 +47,7 @@
     "Hal@glcorps.com",
     "Lt.Jordan@Ferrisairbase.gov"
   ]
-}
+},
 {
   "personCode": "23jko",
   "firstName": "Curry",
@@ -61,7 +63,7 @@
     "Hal@glcorps.com",
     "Lt.Jordan@Ferrisairbase.gov"
   ]
-}
+},
 {
   "personCode": "af6t",
   "firstName": "Prince",
@@ -76,7 +78,7 @@
   "email": [
     "dprince@metroartmuseum.gov"
   ]
-}
+},
 {
   "personCode": "355f",
   "firstName": "Hull",
@@ -92,7 +94,7 @@
     "goldenbrett@gmail.com",
     "datsyukfan101@crazy.net"
   ]
-}
+},
 {
   "personCode": "k17",
   "firstName": "Stone",
@@ -108,3 +110,4 @@
     "cyborg@watchtower.com"
   ]
 }
+]}

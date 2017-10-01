@@ -1,17 +1,19 @@
 {
+"products": [
+{
   "seasonPassName": "Force Friday",
   "startDate": "2012-11-19 00:00",
   "endDate": "2016-03-04 00:00",
   "seasonPassCost": 581.0,
   "productCode": "b29e",
   "productType": "S"
-}
+},
 {
   "refreshmentName": "Keystone Beer-20oz",
   "refreshmentCost": 4.99,
   "productCode": "ff23",
   "productType": "R"
-}
+},
 {
   "dateTime": "2017-09-20 10:10",
   "movieName": "Enough Pizza",
@@ -26,12 +28,12 @@
   "pricePerUnit": 21.5,
   "productCode": "fp12",
   "productType": "M"
-}
+},
 {
   "parkingFee": 57.0,
   "productCode": "90fa",
   "productType": "P"
-}
+},
 {
   "dateTime": "2017-05-03 18:40",
   "movieName": "Infinity Gauntlet",
@@ -46,7 +48,7 @@
   "pricePerUnit": 81.0,
   "productCode": "1239",
   "productType": "M"
-}
+},
 {
   "dateTime": "2016-12-10 10:50",
   "movieName": "Ring of Power",
@@ -61,18 +63,18 @@
   "pricePerUnit": 25.0,
   "productCode": "782g",
   "productType": "M"
-}
+},
 {
   "parkingFee": 33.0,
   "productCode": "3289",
   "productType": "P"
-}
+},
 {
   "refreshmentName": "Soylent Green",
   "refreshmentCost": 8.5,
   "productCode": "32f4",
   "productType": "R"
-}
+},
 {
   "seasonPassName": "Bloody Mary",
   "startDate": "2016-08-27 00:00",
@@ -80,12 +82,12 @@
   "seasonPassCost": 93.0,
   "productCode": "3y92",
   "productType": "S"
-}
+},
 {
   "parkingFee": 48.71,
   "productCode": "90fb",
   "productType": "P"
-}
+},
 {
   "seasonPassName": "SixWeeks-VeryLimited",
   "startDate": "2017-07-07 00:00",
@@ -93,10 +95,11 @@
   "seasonPassCost": 101.8,
   "productCode": "xer4",
   "productType": "S"
-}
+},
 {
   "refreshmentName": "Double Tofu",
   "refreshmentCost": 19.0,
   "productCode": "yp23",
   "productType": "R"
 }
+]}

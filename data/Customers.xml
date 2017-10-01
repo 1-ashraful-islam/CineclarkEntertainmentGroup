@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<generalcustomer>
+<customers><generalcustomer>
   <customerCode>C001</customerCode>
   <contact>
     <personCode>944jk</personCode>
@@ -12,10 +12,10 @@
       <zip>12387</zip>
       <country>USA</country>
     </address>
-    <email>
-      <string>the_flash@watchtower.com</string>
-      <string>barry_allen@ccpd.gov</string>
-    </email>
+    <emails>
+      <email>the_flash@watchtower.com</email>
+      <email>barry_allen@ccpd.gov</email>
+    </emails>
   </contact>
   <name>Beirut International</name>
   <address>
@@ -64,10 +64,10 @@
       <zip>10860</zip>
       <country>USA</country>
     </address>
-    <email>
-      <string>goldenbrett@gmail.com</string>
-      <string>datsyukfan101@crazy.net</string>
-    </email>
+    <emails>
+      <email>goldenbrett@gmail.com</email>
+      <email>datsyukfan101@crazy.net</email>
+    </emails>
   </contact>
   <name>Apple</name>
   <address>
@@ -128,10 +128,10 @@
       <zip>M8E 2F9</zip>
       <country>Canada</country>
     </address>
-    <email>
-      <string>Hal@glcorps.com</string>
-      <string>Lt.Jordan@Ferrisairbase.gov</string>
-    </email>
+    <emails>
+      <email>Hal@glcorps.com</email>
+      <email>Lt.Jordan@Ferrisairbase.gov</email>
+    </emails>
   </contact>
   <name>Hammer Tech</name>
   <address>
@@ -143,3 +143,4 @@
   </address>
   <type>S</type>
 </studentcustomer>
+</customers>
