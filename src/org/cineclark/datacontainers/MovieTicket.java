@@ -1,5 +1,7 @@
 package org.cineclark.datacontainers;
 
+import java.util.ArrayList;
+
 import org.joda.time.DateTime;
 
 public class MovieTicket extends Product{
@@ -96,18 +98,31 @@ public class MovieTicket extends Product{
 		return computeSubTotal()+computeTaxes();
 	}
 	
+
 	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
+	 * @see org.cineclark.datacontainers.Product#productDetails()
 	 */
 	@Override
-	public String toString() {
+	public ArrayList<String> productDetails() {
+		
+		ArrayList<String> movieDetails= new ArrayList<String>();
 		//7% discount on Tuesday and Thursday
-				if(dateTime.getDayOfWeek() == 2 || dateTime.getDayOfWeek() == 4 ) {
-					return "MovieTicket '"+ movieName +"'@ " +address.getStreet() +" "+ dateTime.toString("MMM dd, yyyy HH:mm")+ String.format(" (%d units @ $%-4.2f/unit ", getNumberOfProducts(),getPricePerUnit())+"- Tue/Thu 7% off)";				
-				}
-				
-		return "MovieTicket '"+ movieName +"'@ " +address.getStreet() +" "+ dateTime.toString("MMM dd, yyyy HH:mm")+ String.format(" (%d units @ $%-4.2f/unit)", getNumberOfProducts(),getPricePerUnit());
+		if(dateTime.getDayOfWeek() == 2 || dateTime.getDayOfWeek() == 4 ) {
+			
+			movieDetails.add("MovieTicket '"+ movieName +"'@ " +address.getStreet());
+			movieDetails.add(dateTime.toString("MMM dd, yyyy HH:mm")+ String.format(" (%d units @ $%-4.2f/unit ", getNumberOfProducts(),getPricePerUnit())+"- Tue/Thu 7% off)");
+			return  movieDetails;				
+		}
+		movieDetails.add("MovieTicket '"+ movieName +"'@ " +address.getStreet() );
+		
+		movieDetails.add((dateTime.toString("MMM dd, yyyy HH:mm")+ String.format(" (%d units @ $%-4.2f/unit)", getNumberOfProducts(),getPricePerUnit())));
+		
+		return movieDetails;
+		
+
 	}
+	
+	
 	
 	
 	

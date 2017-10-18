@@ -1,5 +1,7 @@
 package org.cineclark.datacontainers;
 
+import java.util.ArrayList;
+
 public class ParkingPass extends Product{
 
 	private double parkingFee;
@@ -50,6 +52,11 @@ public class ParkingPass extends Product{
 	public double computeTotal() {
 		// TODO Auto-generated method stub
 		return computeSubTotal()+computeTaxes();
+	}
+	@Override
+	public ArrayList<String> productDetails() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

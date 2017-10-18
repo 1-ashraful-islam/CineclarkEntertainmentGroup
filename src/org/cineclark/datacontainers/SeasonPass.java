@@ -1,5 +1,7 @@
 package org.cineclark.datacontainers;
 
+import java.util.ArrayList;
+
 import org.joda.time.DateTime;
 import org.joda.time.Period;
 
@@ -95,6 +97,12 @@ public class SeasonPass extends Product{
 	public double computeTotal() {
 		// TODO Auto-generated method stub
 		return computeSubTotal()+computeTaxes();
+	}
+
+	@Override
+	public ArrayList<String> productDetails() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

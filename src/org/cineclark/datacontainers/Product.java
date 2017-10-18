@@ -1,5 +1,7 @@
 package org.cineclark.datacontainers;
 
+import java.util.ArrayList;
+
 abstract public class Product {
 
 	private String productCode;
@@ -73,5 +75,6 @@ abstract public class Product {
 	abstract public double computeSubTotal();
 	abstract public double computeTaxes();
 	abstract public double computeTotal();
+	abstract public ArrayList<String> productDetails();
 	
 }

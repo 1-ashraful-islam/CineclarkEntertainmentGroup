@@ -65,7 +65,12 @@ public class InvoiceReport {
 			double productSubSubTaxes=0;
 			double productSubTotalTotal=0;
 			for (Product aProduct: aInvoice.getProductList()) {
-			System.out.println(String.format("%-5s %-60s $%-9.2f $%-5.2f $%-6.2f",aProduct.getProductCode(),aProduct.toString(),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal() ));
+				if(aProduct.productDetails().size() ==2) {
+					System.out.println(String.format("%-5s %-60s $%-9.2f $%-5.2f $%-6.2f\n%-5s %-60s",aProduct.getProductCode(),aProduct.productDetails().get(0),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal(),"",aProduct.productDetails().get(1) ));
+					
+				}
+				else 
+					System.out.println(String.format("%-5s %-60s $%-9.2f $%-5.2f $%-6.2f",aProduct.getProductCode(),aProduct.productDetails().get(0),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal() ));
 			productSubSubTotal+=aProduct.computeSubTotal();
 			productSubSubTaxes+=aProduct.computeTaxes();
 			productSubTotalTotal+=aProduct.computeTotal();

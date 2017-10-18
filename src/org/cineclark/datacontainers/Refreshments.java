@@ -1,5 +1,7 @@
 package org.cineclark.datacontainers;
 
+import java.util.ArrayList;
+
 public class Refreshments extends Product {
 
 	private String refreshmentName;
@@ -56,6 +58,12 @@ public class Refreshments extends Product {
 	public double computeTotal() {
 		// TODO Auto-generated method stub
 		return computeSubTotal()+computeTaxes();
+	}
+
+	@Override
+	public ArrayList<String> productDetails() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
