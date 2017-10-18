@@ -101,10 +101,17 @@ public class SeasonPass extends Product{
 
 	@Override
 	public ArrayList<String> productDetails() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		
+		ArrayList<String> seasonPassDetails= new ArrayList<String>();
+		
+		seasonPassDetails.add(" Season Pass - "+ getSeasonPassName() );
+		
+		seasonPassDetails.add(String.format(" (%d units @ $%-4.2f/unit + $8 fee/unit)", getNumberOfProducts(),getSeasonPassCost()));
+		
+		return seasonPassDetails;
+		
 
+	}
 	
 	
 	

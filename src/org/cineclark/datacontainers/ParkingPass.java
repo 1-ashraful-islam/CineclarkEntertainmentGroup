@@ -56,7 +56,12 @@ public class ParkingPass extends Product{
 	@Override
 	public ArrayList<String> productDetails() {
 		// TODO Auto-generated method stub
-		return null;
+		ArrayList<String> parkingPassDetails= new ArrayList<String>();
+		parkingPassDetails.add("ParkingPass "+ getProductCode());
+		
+		parkingPassDetails.add(String.format(" (%d units @ $%-4.2f with 23 free)", getNumberOfProducts(),getParkingFee()));
+		
+		return parkingPassDetails;
 	}
 	
 	

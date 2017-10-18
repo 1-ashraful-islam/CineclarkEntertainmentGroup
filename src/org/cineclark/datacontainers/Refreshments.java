@@ -63,7 +63,12 @@ public class Refreshments extends Product {
 	@Override
 	public ArrayList<String> productDetails() {
 		// TODO Auto-generated method stub
-		return null;
+		ArrayList<String> refreshmentsDetails= new ArrayList<String>();
+		refreshmentsDetails.add(getRefreshmentName());
+		
+		refreshmentsDetails.add(String.format(" (%d units @ $%-4.2f with 5/% off)", getNumberOfProducts(),getRefreshmentCost()));
+		
+		return refreshmentsDetails;
 	}
 	
 	
