@@ -9,6 +9,14 @@ public class Refreshments extends Product {
 		this.refreshmentName = refreshmentName;
 		this.refreshmentCost = refreshmentCost;
 	}
+	
+	public Refreshments(Refreshments copyInstance) {
+		super(copyInstance.getProductCode(),copyInstance.getProductType());
+		this.refreshmentName = copyInstance.refreshmentName;
+		this.refreshmentCost = copyInstance.refreshmentCost;
+		setNumberOfProducts(new Integer(copyInstance.getNumberOfProducts()));
+	}
+	
 	public String getRefreshmentName() {
 		return refreshmentName;
 	}
@@ -20,6 +28,34 @@ public class Refreshments extends Product {
 	}
 	public void setRefreshmentCost(double refreshmentCost) {
 		this.refreshmentCost = refreshmentCost;
+	}
+	
+	@Override
+	public double computeSubTotal() {
+		// TODO Auto-generated method stub
+		//5% discount if purchased with movie
+		if(getOptionalParameter() !=null) {
+		if(getOptionalParameter().equalsIgnoreCase("Discount") ) {
+			return getRefreshmentCost()*95*getNumberOfProducts()/100;
+		}
+		}
+
+		return getRefreshmentCost()*getNumberOfProducts();
+	}
+
+	@Override
+	public double computeTaxes() {
+		// TODO Auto-generated method stub
+		if(getTaxExempt() == 'Y') {
+			return 0;
+		}
+		return computeSubTotal()*.04;
+	}
+
+	@Override
+	public double computeTotal() {
+		// TODO Auto-generated method stub
+		return computeSubTotal()+computeTaxes();
 	}
 	
 	

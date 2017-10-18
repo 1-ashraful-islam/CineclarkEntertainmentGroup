@@ -16,6 +16,24 @@ public class StudentCustomer extends Customer{
 	public void setType(char type) {
 		this.type = type;
 	}
+
+	@Override
+	public String getCustomerType() {
+		// TODO Auto-generated method stub
+		return "Student";
+	}
+
+	@Override
+	public double getDiscount() {
+		// TODO Auto-generated method stub
+		return .08; //8% discount
+	}
+
+	@Override
+	public double getadditionalFee() {
+		// TODO Auto-generated method stub
+		return 6.75;
+	}
 	
 
 }

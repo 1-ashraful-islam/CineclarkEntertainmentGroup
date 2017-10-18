@@ -19,6 +19,15 @@ public class MovieTicket extends Product{
 		this.screenNo = screenNo;
 		this.pricePerUnit = pricePerUnit;
 	}
+	public MovieTicket(MovieTicket copyInstance) {
+		super(copyInstance.getProductCode(), copyInstance.getProductType());
+		this.dateTime = copyInstance.dateTime;
+		this.movieName = copyInstance.movieName;
+		this.address = copyInstance.address;
+		this.screenNo = copyInstance.screenNo;
+		this.pricePerUnit = copyInstance.pricePerUnit;
+		setNumberOfProducts(new Integer(copyInstance.getNumberOfProducts()));
+	}
 
 	public DateTime getDateTime() {
 		return dateTime;
@@ -53,11 +62,38 @@ public class MovieTicket extends Product{
 	}
 
 	public double getPricePerUnit() {
+		
 		return pricePerUnit;
 	}
 
 	public void setPricePerUnit(double pricePerUnit) {
 		this.pricePerUnit = pricePerUnit;
+	}
+
+	@Override
+	public double computeSubTotal() {
+		// TODO Auto-generated method stub
+		//7% discount on Tuesday and Thursday
+		if(dateTime.getDayOfWeek() == 2 || dateTime.getDayOfWeek() == 4 ) {
+			 
+			return .93*getPricePerUnit()*getNumberOfProducts(); //7% discount
+		}
+		return getPricePerUnit()*getNumberOfProducts();
+	}
+
+	@Override
+	public double computeTaxes() {
+		// TODO Auto-generated method stub
+		if(getTaxExempt() == 'Y') {
+			return 0;
+		}
+		return computeSubTotal()*.06;
+	}
+
+	@Override
+	public double computeTotal() {
+		// TODO Auto-generated method stub
+		return computeSubTotal()+computeTaxes();
 	}
 	
 	

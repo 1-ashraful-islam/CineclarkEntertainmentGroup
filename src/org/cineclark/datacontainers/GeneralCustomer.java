@@ -16,6 +16,32 @@ public class GeneralCustomer extends Customer{
 	public void setType(char type) {
 		this.type = type;
 	}
+
+
+
+	/* (non-Javadoc)
+	 * @see org.cineclark.datacontainers.Customer#getDiscount()
+	 */
+	@Override
+	public double getDiscount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.cineclark.datacontainers.Customer#getadditionalFee()
+	 */
+	@Override
+	public double getadditionalFee() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getCustomerType() {
+		// TODO Auto-generated method stub
+		return "General";
+	}
 	
 
 }

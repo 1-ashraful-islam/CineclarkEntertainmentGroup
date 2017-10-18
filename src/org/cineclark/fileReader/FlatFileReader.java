@@ -3,7 +3,8 @@
 	import java.io.File;
 	import java.io.FileNotFoundException;
 	import java.util.ArrayList;
-	import java.util.Scanner;
+import java.util.List;
+import java.util.Scanner;
 	import org.cineclark.datacontainers.*;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
@@ -34,8 +35,8 @@ import org.joda.time.format.DateTimeFormat;
 					
 					//Person Name
 					String Name[] = personName.split(",");
-					String lastName = Name[0];
-					String firstName = Name[1];
+					String lastName = Name[0].trim();
+					String firstName = Name[1].trim();
 					
 					//Address Sort
 					String addressSort[]= commaSeperatedAddress.split(",");
@@ -229,5 +230,163 @@ import org.joda.time.format.DateTimeFormat;
 				public ArrayList<Product> readProducts() {
 				return productList;
 				}
+				
+//				support for invoice
+				Scanner sinv = null; //  scanner for product
+				// This Product ArrayList stores the product objects 
+				ArrayList<Invoice> invoiceList = new ArrayList<Invoice>();
+				{ // This code block reads the Invoices.dat file and makes the invoice objects array		
+					try {
+						sinv = new Scanner(new File("data/Invoices.dat"));
+						sinv.nextLine(); // reads the number of records from the first line
+						
+						
+						while(sinv.hasNext()) {
+							Invoice invoice = null; //storage for invoice
+							
+							Customer invoiceCustomer= null;
+							Person salesPerson= null;
+							ArrayList<Product> invoiceProducts = new ArrayList<Product>();
+							String line = sinv.nextLine(); // reads each line starting from 2nd line
+							String data[] = line.split(";"); // tokenizes the line and stores in a s
+
+							// Stores the  array elements of each line into strings
+							String invoiceCode = data[0];
+							String customerCode = data[1];
+							//find the associated customer and add to list
+							for(Customer aCustomer: customerList) {
+								if(aCustomer.getCustomerCode().equalsIgnoreCase(customerCode)) invoiceCustomer= aCustomer; 
+							}
+							
+							
+							
+							String salespersonCode= data[2];
+							//find associated sales person
+							for(Person aPerson: personList) {
+								if(aPerson.getPersonCode().equalsIgnoreCase(salespersonCode)) salesPerson= aPerson; 
+							}
+							DateTime invoiceDate= DateTime.parse(data[3], DateTimeFormat.forPattern("yyyy-MM-dd"));
+							
+							String invoiceProductListString[]=data[4].split(","); //seperating the products
+							
+							// work on each products
+							for ( String productString: invoiceProductListString) {
+								String productDetails[]= productString.split(":");
+								
+								//find product type from productList and add to result
+								
+								Product productSearchResult = null;
+								for (Product aProduct: productList) {
+									if(aProduct.getProductCode().equalsIgnoreCase(productDetails[0]))
+										{
+										productSearchResult= aProduct;
+										}
+								}
+								
+
+								
+							//MovieTicket, parking pass, refreshment does not have the optional entity
+							
+								//MovieTicket						
+							if ( productSearchResult.getProductType()== 'M') {
+								//add the number of products 
+								Product addResult= new MovieTicket((MovieTicket) productSearchResult);
+								addResult.setNumberOfProducts(Integer.parseInt(productDetails[1]));
+								
+								invoiceProducts.add(addResult);
+							}
+							
+							//SeasonPass
+							if ( productSearchResult.getProductType()== 'S') {
+								//add the number of products 
+								SeasonPass addResult= new SeasonPass((SeasonPass) productSearchResult);
+								addResult.setInvoiceDate(invoiceDate);
+								addResult.setNumberOfProducts(Integer.parseInt(productDetails[1]));
+								
+								invoiceProducts.add((Product) addResult);
+							}
+							//Refresments
+							if ( productSearchResult.getProductType()== 'R') {
+								//add the number of products 
+								Product addResult= new Refreshments((Refreshments) productSearchResult);
+								addResult.setNumberOfProducts(Integer.parseInt(productDetails[1]));
+								
+								invoiceProducts.add(addResult);
+							}
+							
+							
+							//ParkingPass might have a optional entity
+							if(productSearchResult.getProductType() =='P') {
+								//add the number of products 
+								Product addResult= new ParkingPass((ParkingPass) productSearchResult);
+								addResult.setNumberOfProducts(Integer.parseInt(productDetails[1]));
+								//check the additional optional parameter to calculate number of free parkings
+								if(productDetails.length>2) {
+									addResult.setOptionalParameter(productDetails[2]);
+								}
+					
+								invoiceProducts.add(addResult);
+							}
+							
+
+							}
+							
+							//find if the refreshment discount applies
+							//find if discount is available
+							Product discountedRefreshment= null; 
+							for(Product aProduct:invoiceProducts) {
+								if(aProduct.getProductType() == 'R') discountedRefreshment= aProduct;
+							}
+							if (discountedRefreshment !=null) { //if discount applies
+							for(Product aProduct:invoiceProducts) {
+								if (aProduct.getProductType() == 'M') {
+									discountedRefreshment.setOptionalParameter("Discount");
+								}
+							}
+							}
+							//find if the free parking available
+							//find number of free parking
+							Product discountedParking= null;
+							for(Product aProduct:invoiceProducts) {
+								if(aProduct.getProductType() == 'P' && aProduct.getOptionalParameter() !=null) {
+									discountedParking= aProduct;
+								}
+							}
+							if(discountedParking !=null) {
+								for(Product aProduct:invoiceProducts) {	
+							if (aProduct.getProductCode().equalsIgnoreCase(discountedParking.getOptionalParameter())) {
+								discountedParking.setOptionalParameter(Integer.toString(aProduct.getNumberOfProducts()));
+							}
+							}
+							}
+							
+							//set the tax exempt
+							
+
+							if(invoiceCustomer.getCustomerType().equalsIgnoreCase("Student"))
+							{
+								for (Product aProduct: invoiceProducts) {
+									aProduct.setTaxExempt('Y');
+								}
+								
+							}
+							
+							invoice= new Invoice(invoiceCode, invoiceCustomer, salesPerson, invoiceDate,invoiceProducts );
+							invoiceList.add(invoice);
+							
+						
+
+						}					
+						sinv.close();	
+
+
+						} catch(FileNotFoundException e) {
+							System.err.println(e);
+						}
+			}
+					public ArrayList<Invoice> readInvoices() {
+					return invoiceList;
+					}
+				
 
 		}

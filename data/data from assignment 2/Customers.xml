@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<customers><generalcustomer>
+  <customerCode>C001</customerCode>
+  <contact>
+    <personCode>944jk</personCode>
+    <firstName>Allen</firstName>
+    <lastName> Barry</lastName>
+    <address>
+      <street>881 Coventry Boulevard</street>
+      <city>San Fransokyo</city>
+      <state>CA</state>
+      <zip>12387</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>the_flash@watchtower.com</email>
+      <email>barry_allen@ccpd.gov</email>
+    </emails>
+  </contact>
+  <name>Beirut International</name>
+  <address>
+    <street>778 Avery Hall</street>
+    <city>Lincoln</city>
+    <state>NE</state>
+    <zip>68588-0115</zip>
+    <country>USA</country>
+  </address>
+  <type>G</type>
+</generalcustomer>
+<studentcustomer>
+  <customerCode>C002</customerCode>
+  <name>Super Saver</name>
+  <address>
+    <street>6528 East St</street>
+    <city>Gothum</city>
+    <state>NE</state>
+    <zip>68545</zip>
+    <country>USA</country>
+  </address>
+  <type>S</type>
+</studentcustomer>
+<studentcustomer>
+  <customerCode>C003</customerCode>
+  <name>Lex corp</name>
+  <address>
+    <street>48632 Boulevard</street>
+    <city>Metropolis</city>
+    <state>CA</state>
+    <zip>95530</zip>
+    <country>USA</country>
+  </address>
+  <type>S</type>
+</studentcustomer>
+<generalcustomer>
+  <customerCode>C004</customerCode>
+  <contact>
+    <personCode>355f</personCode>
+    <firstName>Hull</firstName>
+    <lastName> Brett</lastName>
+    <address>
+      <street>1409 Center Street</street>
+      <city>Buffalo</city>
+      <state>NY</state>
+      <zip>10860</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>goldenbrett@gmail.com</email>
+      <email>datsyukfan101@crazy.net</email>
+    </emails>
+  </contact>
+  <name>Apple</name>
+  <address>
+    <street>1563 Fireball Dropper Ave</street>
+    <city>Star City</city>
+    <state>MD</state>
+    <zip>25065</zip>
+    <country>USA</country>
+  </address>
+  <type>G</type>
+</generalcustomer>
+<generalcustomer>
+  <customerCode>C005</customerCode>
+  <name>Queen Industries</name>
+  <address>
+    <street>0025 Double North</street>
+    <city>Central City</city>
+    <state>IL</state>
+    <zip>60601</zip>
+    <country>USA</country>
+  </address>
+  <type>G</type>
+</generalcustomer>
+<studentcustomer>
+  <customerCode>C006</customerCode>
+  <name>Wayne Tech</name>
+  <address>
+    <street>819 White House Rd.</street>
+    <city>Chicago</city>
+    <state>NE</state>
+    <zip>68450</zip>
+    <country>USA</country>
+  </address>
+  <type>S</type>
+</studentcustomer>
+<generalcustomer>
+  <customerCode>C007</customerCode>
+  <name>Hamilton</name>
+  <address>
+    <street>1600 Pennsylvania</street>
+    <city>Couch</city>
+    <state>NE</state>
+    <zip>68777</zip>
+    <country>USA</country>
+  </address>
+  <type>G</type>
+</generalcustomer>
+<studentcustomer>
+  <customerCode>C008</customerCode>
+  <contact>
+    <personCode>23jko</personCode>
+    <firstName>Curry</firstName>
+    <lastName> Arthur</lastName>
+    <address>
+      <street>1968 Penny Lane</street>
+      <city>Saskatoon</city>
+      <state>TO</state>
+      <zip>M8E 2F9</zip>
+      <country>Canada</country>
+    </address>
+    <emails>
+      <email>Hal@glcorps.com</email>
+      <email>Lt.Jordan@Ferrisairbase.gov</email>
+    </emails>
+  </contact>
+  <name>Hammer Tech</name>
+  <address>
+    <street>7 Street</street>
+    <city>Cardiff</city>
+    <state>WA</state>
+    <zip>61860</zip>
+    <country>USA</country>
+  </address>
+  <type>S</type>
+</studentcustomer>
+</customers>

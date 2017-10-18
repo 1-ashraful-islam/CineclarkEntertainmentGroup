@@ -1,0 +1,113 @@
+{
+"persons": [
+{
+  "personCode": "944jk",
+  "firstName": "Allen",
+  "lastName": " Barry",
+  "address": {
+    "street": "881 Coventry Boulevard",
+    "city": "San Fransokyo",
+    "state": "CA",
+    "zip": "12387",
+    "country": "USA"
+  },
+  "email": [
+    "the_flash@watchtower.com",
+    "barry_allen@ccpd.gov"
+  ]
+},
+{
+  "personCode": "306i",
+  "firstName": "Parker",
+  "lastName": " Peter",
+  "address": {
+    "street": "1605 42nd Street",
+    "city": "Isengard",
+    "state": "WY",
+    "zip": "31415",
+    "country": "USA"
+  },
+  "email": [
+    "Photos@dailybugle.com",
+    "brokekid@avengers.com"
+  ]
+},
+{
+  "personCode": "55bh",
+  "firstName": "Jordan",
+  "lastName": " Hal",
+  "address": {
+    "street": "867 Ferris Circle",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "63810",
+    "country": "USA"
+  },
+  "email": [
+    "Hal@glcorps.com",
+    "Lt.Jordan@Ferrisairbase.gov"
+  ]
+},
+{
+  "personCode": "23jko",
+  "firstName": "Curry",
+  "lastName": " Arthur",
+  "address": {
+    "street": "1968 Penny Lane",
+    "city": "Saskatoon",
+    "state": "TO",
+    "zip": "M8E 2F9",
+    "country": "Canada"
+  },
+  "email": [
+    "Hal@glcorps.com",
+    "Lt.Jordan@Ferrisairbase.gov"
+  ]
+},
+{
+  "personCode": "af6t",
+  "firstName": "Prince",
+  "lastName": " Diana",
+  "address": {
+    "street": "3434 Washington Street",
+    "city": "Albany",
+    "state": "NY",
+    "zip": "18950-1868",
+    "country": "USA"
+  },
+  "email": [
+    "dprince@metroartmuseum.gov"
+  ]
+},
+{
+  "personCode": "355f",
+  "firstName": "Hull",
+  "lastName": " Brett",
+  "address": {
+    "street": "1409 Center Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "zip": "10860",
+    "country": "USA"
+  },
+  "email": [
+    "goldenbrett@gmail.com",
+    "datsyukfan101@crazy.net"
+  ]
+},
+{
+  "personCode": "k17",
+  "firstName": "Stone",
+  "lastName": " Victor",
+  "address": {
+    "street": "9838 Bates Avenue",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "61928",
+    "country": "USA"
+  },
+  "email": [
+    "cyborg@watchtower.com"
+  ]
+}
+]}

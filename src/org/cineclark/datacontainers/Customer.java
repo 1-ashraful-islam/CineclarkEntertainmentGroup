@@ -1,12 +1,12 @@
 package org.cineclark.datacontainers;
 
-public class Customer {
+abstract public class Customer {
 
 	private String customerCode;
 	private Person contact;
 	private String name;
 	private Address address;
-	
+
 	public Customer(String customerCode, Person contact, String name, Address address) {
 		super();
 		this.customerCode = customerCode;
@@ -46,6 +46,11 @@ public class Customer {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	
+	//abstract classes to add additional functionality
+	abstract public String getCustomerType();
+	abstract public double getDiscount();
+	abstract public double getadditionalFee();
 	
 	
 	

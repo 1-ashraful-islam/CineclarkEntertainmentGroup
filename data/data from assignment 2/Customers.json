@@ -1,0 +1,147 @@
+{
+"customers": [
+{
+  "type": "G",
+  "customerCode": "C001",
+  "contact": {
+    "personCode": "944jk",
+    "firstName": "Allen",
+    "lastName": " Barry",
+    "address": {
+      "street": "881 Coventry Boulevard",
+      "city": "San Fransokyo",
+      "state": "CA",
+      "zip": "12387",
+      "country": "USA"
+    },
+    "email": [
+      "the_flash@watchtower.com",
+      "barry_allen@ccpd.gov"
+    ]
+  },
+  "name": "Beirut International",
+  "address": {
+    "street": "778 Avery Hall",
+    "city": "Lincoln",
+    "state": "NE",
+    "zip": "68588-0115",
+    "country": "USA"
+  }
+},
+{
+  "type": "S",
+  "customerCode": "C002",
+  "name": "Super Saver",
+  "address": {
+    "street": "6528 East St",
+    "city": "Gothum",
+    "state": "NE",
+    "zip": "68545",
+    "country": "USA"
+  }
+},
+{
+  "type": "S",
+  "customerCode": "C003",
+  "name": "Lex corp",
+  "address": {
+    "street": "48632 Boulevard",
+    "city": "Metropolis",
+    "state": "CA",
+    "zip": "95530",
+    "country": "USA"
+  }
+},
+{
+  "type": "G",
+  "customerCode": "C004",
+  "contact": {
+    "personCode": "355f",
+    "firstName": "Hull",
+    "lastName": " Brett",
+    "address": {
+      "street": "1409 Center Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "zip": "10860",
+      "country": "USA"
+    },
+    "email": [
+      "goldenbrett@gmail.com",
+      "datsyukfan101@crazy.net"
+    ]
+  },
+  "name": "Apple",
+  "address": {
+    "street": "1563 Fireball Dropper Ave",
+    "city": "Star City",
+    "state": "MD",
+    "zip": "25065",
+    "country": "USA"
+  }
+},
+{
+  "type": "G",
+  "customerCode": "C005",
+  "name": "Queen Industries",
+  "address": {
+    "street": "0025 Double North",
+    "city": "Central City",
+    "state": "IL",
+    "zip": "60601",
+    "country": "USA"
+  }
+},
+{
+  "type": "S",
+  "customerCode": "C006",
+  "name": "Wayne Tech",
+  "address": {
+    "street": "819 White House Rd.",
+    "city": "Chicago",
+    "state": "NE",
+    "zip": "68450",
+    "country": "USA"
+  }
+},
+{
+  "type": "G",
+  "customerCode": "C007",
+  "name": "Hamilton",
+  "address": {
+    "street": "1600 Pennsylvania",
+    "city": "Couch",
+    "state": "NE",
+    "zip": "68777",
+    "country": "USA"
+  }
+},
+{
+  "type": "S",
+  "customerCode": "C008",
+  "contact": {
+    "personCode": "23jko",
+    "firstName": "Curry",
+    "lastName": " Arthur",
+    "address": {
+      "street": "1968 Penny Lane",
+      "city": "Saskatoon",
+      "state": "TO",
+      "zip": "M8E 2F9",
+      "country": "Canada"
+    },
+    "email": [
+      "Hal@glcorps.com",
+      "Lt.Jordan@Ferrisairbase.gov"
+    ]
+  },
+  "name": "Hammer Tech",
+  "address": {
+    "street": "7 Street",
+    "city": "Cardiff",
+    "state": "WA",
+    "zip": "61860",
+    "country": "USA"
+  }
+}
+]}
