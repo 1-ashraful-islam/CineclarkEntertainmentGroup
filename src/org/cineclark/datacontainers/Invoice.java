@@ -13,7 +13,6 @@ public class Invoice {
 	private ArrayList<Product> productList= new ArrayList<Product>();
 	private double invoiceSubTotal;
 	private double invoiceTotalTaxes;
-	private double invoiceDiscount;
 	
 	public Invoice(String invoiceCode, Customer customer, Person salesPerson, DateTime invoiceDate,
 			ArrayList<Product> productList) {
@@ -105,7 +104,7 @@ public class Invoice {
 	}
 	
 	public double getInvoiceDiscount() {
-		invoiceDiscount= 0;
+		
 		if(getCustomer().getCustomerType().equalsIgnoreCase("Student")) {
 			return getInvoiceSubTotal()*getCustomer().getDiscount();
 		}
