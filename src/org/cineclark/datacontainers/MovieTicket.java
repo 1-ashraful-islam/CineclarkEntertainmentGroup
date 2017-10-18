@@ -96,5 +96,19 @@ public class MovieTicket extends Product{
 		return computeSubTotal()+computeTaxes();
 	}
 	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		//7% discount on Tuesday and Thursday
+				if(dateTime.getDayOfWeek() == 2 || dateTime.getDayOfWeek() == 4 ) {
+					return "MovieTicket '"+ movieName +"'@ " +address.getStreet() +" "+ dateTime.toString("MMM dd, yyyy HH:mm")+ String.format(" (%d units @ $%-4.2f/unit ", getNumberOfProducts(),getPricePerUnit())+"- Tue/Thu 7% off)";				
+				}
+				
+		return "MovieTicket '"+ movieName +"'@ " +address.getStreet() +" "+ dateTime.toString("MMM dd, yyyy HH:mm")+ String.format(" (%d units @ $%-4.2f/unit)", getNumberOfProducts(),getPricePerUnit());
+	}
+	
+	
 	
 }

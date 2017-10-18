@@ -2,7 +2,10 @@ package org.cineclark.reports;
 
 import java.util.List;
 
+import org.cineclark.datacontainers.Address;
+import org.cineclark.datacontainers.Customer;
 import org.cineclark.datacontainers.Invoice;
+import org.cineclark.datacontainers.Product;
 import org.cineclark.fileReader.FlatFileReader;
 
 public class InvoiceReport {
@@ -35,5 +38,51 @@ public class InvoiceReport {
 		System.out.println("====================================================================================================================");
 		System.out.println(String.format("TOTALS %-65s $%-9.2f $%-5.2f $%-6.2f $%-7.2f $%-7.2f", "",subInvoiceSubtotal,subInvoiceTotalFees,subInvoiceTotalTaxes, subInvoiceTotalDiscount, subInvoiceGrandTotal));
 		
+		
+		//Individual detail reports
+		int invoiceNo=1;
+		
+		for(Invoice aInvoice: invoices) {
+			System.out.println(String.format("Invoice INV%03d",invoiceNo));
+			System.out.println("========================");
+			System.out.println(String.format("Salesperson: %s",aInvoice.getSalesPerson().getName() ));
+			System.out.println("Customer Info:");
+			//get the customer object
+			Customer currentCustomer= aInvoice.getCustomer();
+			System.out.println(String.format("\t %s (%s)", currentCustomer.getName(), currentCustomer.getCustomerCode()));
+			System.out.println(String.format("\t [%5s]", currentCustomer.getCustomerType()));
+			System.out.println(String.format("\t %5s",currentCustomer.getContact().getName()));
+			//get the address of customer
+			Address currentAddress = currentCustomer.getAddress();
+			System.out.println(String.format("\t %s\n\t %s %s %s %s",currentAddress.getStreet(), currentAddress.getCity(), currentAddress.getState(),currentAddress.getZip(),currentAddress.getCountry()));
+			System.out.println("------------------------------------------");
+			
+			//Print out the individual product details
+			System.out.println(String.format("%-5s %-60s %-10s %-6s %-7s", "Code", "Item", "SubTotal", "Tax", "Total"));
+			
+			//variables for subtotal of product prices
+			double productSubSubTotal=0;
+			double productSubSubTaxes=0;
+			double productSubTotalTotal=0;
+			for (Product aProduct: aInvoice.getProductList()) {
+			System.out.println(String.format("%-5s %-60s $%-9.2f $%-5.2f $%-6.2f",aProduct.getProductCode(),aProduct.toString(),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal() ));
+			productSubSubTotal+=aProduct.computeSubTotal();
+			productSubSubTaxes+=aProduct.computeTaxes();
+			productSubTotalTotal+=aProduct.computeTotal();
+			}
+			System.out.println(String.format("%66s ==========================", ""));
+			System.out.println(String.format("%-66s $%-9.2f $%-5.2f $%-6.2f", "SUB-TOTALS",productSubSubTotal,productSubSubTaxes,productSubTotalTotal));
+			if(aInvoice.getInvoiceDiscount() >0) {
+				System.out.println(String.format("%-84s $-%-6.2f", "DISCOUNT (8% STUDENT & NO TAX)",aInvoice.getInvoiceDiscount()));
+			}
+			if(currentCustomer.getadditionalFee() >0) {
+				System.out.println(String.format("%-83s  $%-6.2f","ADDITIONAL FEE (STUDENT)",currentCustomer.getadditionalFee()));
+			}
+			System.out.println(String.format("%-84s $%-6.2f", "TOTAL", aInvoice.getInvoiceTotal()));
+			
+			//Thanking for purchase
+			System.out.println("\n\n\t\t\tThank you for your purchase!\n\n");
+			invoiceNo++;
+		}
 	}
 }

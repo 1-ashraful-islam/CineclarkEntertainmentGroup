@@ -46,6 +46,17 @@ public class Address {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		
+		return String.format("%s %s %s %s %s", getStreet(),getCity(), getState(),getZip(),getCountry());
+	}
+	
+	
 	
 	
 }
