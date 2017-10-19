@@ -354,7 +354,7 @@ import org.joda.time.format.DateTimeFormat;
 							if(discountedParking !=null) {
 								for(Product aProduct:invoiceProducts) {	
 							if (aProduct.getProductCode().equalsIgnoreCase(discountedParking.getOptionalParameter())) {
-								discountedParking.setOptionalParameter(Integer.toString(aProduct.getNumberOfProducts()));
+								discountedParking.setOptionalParameter(discountedParking.getOptionalParameter()+","+Integer.toString(aProduct.getNumberOfProducts()));
 							}
 							}
 							}

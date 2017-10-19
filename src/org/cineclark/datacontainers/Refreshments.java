@@ -63,10 +63,13 @@ public class Refreshments extends Product {
 	@Override
 	public ArrayList<String> productDetails() {
 		// TODO Auto-generated method stub
-		ArrayList<String> refreshmentsDetails= new ArrayList<String>();
-		refreshmentsDetails.add(getRefreshmentName());
+		ArrayList<String> refreshmentsDetails= new ArrayList<String>();	
+		if(getOptionalParameter() !=null) {
+			refreshmentsDetails.add(getRefreshmentName() +String.format(" (%d units @ $%-4.2f/unit with 5%% off)", getNumberOfProducts(),getRefreshmentCost()));
+			return refreshmentsDetails;
+		}
+		refreshmentsDetails.add(getRefreshmentName() +String.format(" (%d units @ $%-4.2f/unit)", getNumberOfProducts(),getRefreshmentCost()));
 		
-		refreshmentsDetails.add(String.format(" (%d units @ $%-4.2f with 5/% off)", getNumberOfProducts(),getRefreshmentCost()));
 		
 		return refreshmentsDetails;
 	}

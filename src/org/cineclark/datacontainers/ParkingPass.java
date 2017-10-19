@@ -31,7 +31,7 @@ public class ParkingPass extends Product{
 
 		if(getOptionalParameter() !=null) 
 		{
-			int freeParking= Integer.parseInt(getOptionalParameter());
+			int freeParking= Integer.parseInt(getOptionalParameter().split(",")[1]);
 			if(freeParking >getNumberOfProducts()) return 0; 
 			return getParkingFee()*(getNumberOfProducts()-freeParking);
 		}
@@ -57,9 +57,20 @@ public class ParkingPass extends Product{
 	public ArrayList<String> productDetails() {
 		// TODO Auto-generated method stub
 		ArrayList<String> parkingPassDetails= new ArrayList<String>();
-		parkingPassDetails.add("ParkingPass "+ getProductCode());
+		if( getOptionalParameter() !=null) {
+			//get number of freeParking
+			int freeParking= Integer.parseInt(getOptionalParameter().split(",")[1]);
+			if(freeParking >getNumberOfProducts()) {
+				parkingPassDetails.add("ParkingPass "+ getOptionalParameter().split(",")[0]+String.format(" (%d units @ $%-4.2f with %d free)", getNumberOfProducts(),getParkingFee(),getNumberOfProducts()));
+				return parkingPassDetails;
+				
+			} 
+			parkingPassDetails.add("ParkingPass "+ getOptionalParameter().split(",")[0]+String.format(" (%d units @ $%-4.2f with %d free)", getNumberOfProducts(),getParkingFee(),Integer.parseInt(getOptionalParameter().split(",")[1])));
+			return parkingPassDetails;
+		}
 		
-		parkingPassDetails.add(String.format(" (%d units @ $%-4.2f with 23 free)", getNumberOfProducts(),getParkingFee()));
+		
+		parkingPassDetails.add(String.format("ParkingPass (%d units @ $%-4.2f)", getNumberOfProducts(),getParkingFee()));
 		
 		return parkingPassDetails;
 	}
