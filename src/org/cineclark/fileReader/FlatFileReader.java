@@ -349,14 +349,18 @@ import org.joda.time.format.DateTimeFormat;
 							for(Product aProduct:invoiceProducts) {
 								if(aProduct.getProductType() == 'P' && aProduct.getOptionalParameter() !=null) {
 									discountedParking= aProduct;
+									break;
 								}
 							}
 							if(discountedParking !=null) {
 								for(Product aProduct:invoiceProducts) {	
 							if (aProduct.getProductCode().equalsIgnoreCase(discountedParking.getOptionalParameter())) {
 								discountedParking.setOptionalParameter(discountedParking.getOptionalParameter()+","+Integer.toString(aProduct.getNumberOfProducts()));
+								break;
 							}
 							}
+								//if the associated referenced product is not in invoice set the optional parameter to null again
+								if(discountedParking.getOptionalParameter().split(",").length !=2) discountedParking.setOptionalParameter(null);
 							}
 							
 							//set the tax exempt

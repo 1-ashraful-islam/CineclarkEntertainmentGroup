@@ -43,7 +43,7 @@ public class InvoiceReport {
 		int invoiceNo=1;
 		
 		for(Invoice aInvoice: invoices) {
-			System.out.println(String.format("Invoice INV%03d",invoiceNo));
+			System.out.println(String.format("Invoice %s",aInvoice.getInvoiceCode()));
 			System.out.println("========================");
 			System.out.println(String.format("Salesperson: %s",aInvoice.getSalesPerson().getName() ));
 			System.out.println("Customer Info:");
@@ -58,7 +58,7 @@ public class InvoiceReport {
 			System.out.println("------------------------------------------");
 			
 			//Print out the individual product details
-			System.out.println(String.format("%-5s %-60s %-10s %-6s %-7s", "Code", "Item", "SubTotal", "Tax", "Total"));
+			System.out.println(String.format("%-5s %-70s %-10s %-6s %-7s", "Code", "Item", "SubTotal", "Tax", "Total"));
 			
 			//variables for subtotal of product prices
 			double productSubSubTotal=0;
@@ -66,24 +66,24 @@ public class InvoiceReport {
 			double productSubTotalTotal=0;
 			for (Product aProduct: aInvoice.getProductList()) {
 				if(aProduct.productDetails().size() ==2) {
-					System.out.println(String.format("%-5s %-60s $%-9.2f $%-5.2f $%-6.2f\n%-5s %-60s",aProduct.getProductCode(),aProduct.productDetails().get(0),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal(),"",aProduct.productDetails().get(1) ));
+					System.out.println(String.format("%-5s %-70s $%-9.2f $%-5.2f $%-6.2f\n%-5s %-60s",aProduct.getProductCode(),aProduct.productDetails().get(0),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal(),"",aProduct.productDetails().get(1) ));
 					
 				}
 				else 
-					System.out.println(String.format("%-5s %-60s $%-9.2f $%-5.2f $%-6.2f",aProduct.getProductCode(),aProduct.productDetails().get(0),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal() ));
+					System.out.println(String.format("%-5s %-70s $%-9.2f $%-5.2f $%-6.2f",aProduct.getProductCode(),aProduct.productDetails().get(0),aProduct.computeSubTotal(),aProduct.computeTaxes(),aProduct.computeTotal() ));
 			productSubSubTotal+=aProduct.computeSubTotal();
 			productSubSubTaxes+=aProduct.computeTaxes();
 			productSubTotalTotal+=aProduct.computeTotal();
 			}
-			System.out.println(String.format("%66s ==========================", ""));
-			System.out.println(String.format("%-66s $%-9.2f $%-5.2f $%-6.2f", "SUB-TOTALS",productSubSubTotal,productSubSubTaxes,productSubTotalTotal));
+			System.out.println(String.format("%76s ==========================", ""));
+			System.out.println(String.format("%-76s $%-9.2f $%-5.2f $%-6.2f", "SUB-TOTALS",productSubSubTotal,productSubSubTaxes,productSubTotalTotal));
 			if(aInvoice.getInvoiceDiscount() >0) {
-				System.out.println(String.format("%-84s $-%-6.2f", "DISCOUNT (8% STUDENT & NO TAX)",aInvoice.getInvoiceDiscount()));
+				System.out.println(String.format("%-94s $-%-6.2f", "DISCOUNT (8% STUDENT & NO TAX)",aInvoice.getInvoiceDiscount()));
 			}
 			if(currentCustomer.getadditionalFee() >0) {
-				System.out.println(String.format("%-83s  $%-6.2f","ADDITIONAL FEE (STUDENT)",currentCustomer.getadditionalFee()));
+				System.out.println(String.format("%-93s  $%-6.2f","ADDITIONAL FEE (STUDENT)",currentCustomer.getadditionalFee()));
 			}
-			System.out.println(String.format("%-84s $%-6.2f", "TOTAL", aInvoice.getInvoiceTotal()));
+			System.out.println(String.format("%-94s $%-6.2f", "TOTAL", aInvoice.getInvoiceTotal()));
 			
 			//Thanking for purchase
 			System.out.println("\n\n\t\t\tThank you for your purchase!\n\n");
