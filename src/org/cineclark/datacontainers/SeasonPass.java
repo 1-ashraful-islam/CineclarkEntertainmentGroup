@@ -3,6 +3,7 @@ package org.cineclark.datacontainers;
 import java.util.ArrayList;
 
 import org.joda.time.DateTime;
+import org.joda.time.Days;
 import org.joda.time.Period;
 
 public class SeasonPass extends Product{
@@ -74,14 +75,15 @@ public class SeasonPass extends Product{
 	@Override
 	public double computeSubTotal() {
 		// TODO Auto-generated method stub
-		if(getInvoiceDate().isAfter(getStartDate())) {
-			Period effectivePeriod= new Period(getInvoiceDate(),getEndDate());
-			Period seasonPeriod = new Period(getStartDate(), getEndDate());
-			double proRatedSeasonPassCost= (double) effectivePeriod.getDays()/seasonPeriod.getDays() *getSeasonPassCost()+8.0;
-			return proRatedSeasonPassCost*getNumberOfProducts();
+		if(getInvoiceDate().withTimeAtStartOfDay().isAfter(getStartDate().withTimeAtStartOfDay())) {
+			int effectivePeriod= Days.daysBetween(getInvoiceDate().withTimeAtStartOfDay() , getEndDate().withTimeAtStartOfDay() ).getDays();
+			int seasonPeriod= Days.daysBetween(getStartDate().withTimeAtStartOfDay() , getEndDate().withTimeAtStartOfDay() ).getDays();
+			double proRatedSeasonPassCost= ((double) effectivePeriod/ (double) seasonPeriod*getSeasonPassCost())+8.0;
+			return proRatedSeasonPassCost*(double) getNumberOfProducts();
 		}
+		
 
-		return (getSeasonPassCost()+8)*getNumberOfProducts();
+		return (getSeasonPassCost()+8.0)* (double) getNumberOfProducts();
 	}
 
 	@Override
@@ -103,10 +105,19 @@ public class SeasonPass extends Product{
 	public ArrayList<String> productDetails() {
 		
 		ArrayList<String> seasonPassDetails= new ArrayList<String>();
+		seasonPassDetails.add("Season Pass - "+ getSeasonPassName() );
 		
-		seasonPassDetails.add(" Season Pass - "+ getSeasonPassName() );
+		if(getInvoiceDate().isAfter(getStartDate()) && getInvoiceDate().isBefore(getEndDate())) {
+			int effectivePeriod= Days.daysBetween(getInvoiceDate().withTimeAtStartOfDay() , getEndDate().withTimeAtStartOfDay() ).getDays();
+			int seasonPeriod= Days.daysBetween(getStartDate().withTimeAtStartOfDay() , getEndDate().withTimeAtStartOfDay() ).getDays();
+			seasonPassDetails.add(String.format("(%d units @ $%-4.2f/unit prorated %d/%d days + $8 fee/unit)", getNumberOfProducts(),getSeasonPassCost(),effectivePeriod,seasonPeriod ));
+			
+			return seasonPassDetails;
+		}
 		
-		seasonPassDetails.add(String.format(" (%d units @ $%-4.2f/unit + $8 fee/unit)", getNumberOfProducts(),getSeasonPassCost()));
+		
+		
+		seasonPassDetails.add(String.format("(%d units @ $%-4.2f/unit + $8 fee/unit)", getNumberOfProducts(),getSeasonPassCost()));
 		
 		return seasonPassDetails;
 		

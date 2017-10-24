@@ -61,16 +61,16 @@ public class ParkingPass extends Product{
 			//get number of freeParking
 			int freeParking= Integer.parseInt(getOptionalParameter().split(",")[1]);
 			if(freeParking >getNumberOfProducts()) {
-				parkingPassDetails.add("ParkingPass "+ getOptionalParameter().split(",")[0]+String.format(" (%d units @ $%-4.2f with %d free)", getNumberOfProducts(),getParkingFee(),getNumberOfProducts()));
+				parkingPassDetails.add("ParkingPass "+ getOptionalParameter().split(",")[0]+String.format(" (%d units @ $%-4.2f/unit with %d free)", getNumberOfProducts(),getParkingFee(),getNumberOfProducts()));
 				return parkingPassDetails;
 				
 			} 
-			parkingPassDetails.add("ParkingPass "+ getOptionalParameter().split(",")[0]+String.format(" (%d units @ $%-4.2f with %d free)", getNumberOfProducts(),getParkingFee(),Integer.parseInt(getOptionalParameter().split(",")[1])));
+			parkingPassDetails.add("ParkingPass "+ getOptionalParameter().split(",")[0]+String.format(" (%d units @ $%-4.2f/unit with %d free)", getNumberOfProducts(),getParkingFee(),Integer.parseInt(getOptionalParameter().split(",")[1])));
 			return parkingPassDetails;
 		}
 		
 		
-		parkingPassDetails.add(String.format("ParkingPass (%d units @ $%-4.2f)", getNumberOfProducts(),getParkingFee()));
+		parkingPassDetails.add(String.format("ParkingPass (%d units @ $%-4.2f/unit)", getNumberOfProducts(),getParkingFee()));
 		
 		return parkingPassDetails;
 	}
