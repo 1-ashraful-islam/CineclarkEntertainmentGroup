@@ -1,97 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.1" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="org.cineclark.datacontainers.Invoice" project="CineclarkEntertainmentGroup" 
-    file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/Invoice.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="138" width="165" x="499" y="-40"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="org.cineclark.datacontainers.Customer" project="CineclarkEntertainmentGroup" 
+<class-diagram version="1.2.1" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.cineclark.datacontainers.Customer" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/Customer.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="102" width="148" x="245" y="93"/>    
+    <position height="328" width="153" x="245" y="-10"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="org.cineclark.datacontainers.Person" project="CineclarkEntertainmentGroup" 
+  <class id="2" language="java" name="org.cineclark.datacontainers.Person" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/Person.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="136" width="154" x="507" y="155"/>    
+    <position height="173" width="159" x="508" y="187"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="org.cineclark.datacontainers.Product" project="CineclarkEntertainmentGroup" 
+  <class id="3" language="java" name="org.cineclark.datacontainers.Product" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/Product.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="152" width="176" x="766" y="120"/>    
+    <position height="437" width="181" x="772" y="74"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="org.cineclark.datacontainers.Address" project="CineclarkEntertainmentGroup" 
+  <class id="4" language="java" name="org.cineclark.datacontainers.Address" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/Address.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="157" width="136" x="264" y="262"/>    
+    <position height="157" width="136" x="262" y="355"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="org.cineclark.datacontainers.Refreshments" project="CineclarkEntertainmentGroup" 
+  <class id="5" language="java" name="org.cineclark.datacontainers.Refreshments" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/Refreshments.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="167" x="716" y="356"/>    
+    <position height="293" width="172" x="716" y="564"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="org.cineclark.datacontainers.MovieTicket" project="CineclarkEntertainmentGroup" 
+  <class id="6" language="java" name="org.cineclark.datacontainers.MovieTicket" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/MovieTicket.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="139" width="164" x="504" y="324"/>    
+    <position height="439" width="169" x="502" y="425"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="org.cineclark.datacontainers.SeasonPass" project="CineclarkEntertainmentGroup" 
+  <class id="7" language="java" name="org.cineclark.datacontainers.SeasonPass" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/SeasonPass.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="156" width="165" x="909" y="346"/>    
+    <position height="447" width="170" x="1108" y="379"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="org.cineclark.datacontainers.ParkingPass" project="CineclarkEntertainmentGroup" 
+  <class id="8" language="java" name="org.cineclark.datacontainers.ParkingPass" project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/ParkingPass.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="84" width="136" x="1015" y="240"/>    
+    <position height="253" width="141" x="1037" y="33"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="org.cineclark.datacontainers.GeneralCustomer" 
+  <class id="9" language="java" name="org.cineclark.datacontainers.GeneralCustomer" 
     project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/GeneralCustomer.java" binary="false" 
     corner="BOTTOM_RIGHT">    
@@ -102,7 +92,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="org.cineclark.datacontainers.StudentCustomer" 
+  <class id="10" language="java" name="org.cineclark.datacontainers.StudentCustomer" 
     project="CineclarkEntertainmentGroup" 
     file="/CineclarkEntertainmentGroup/src/org/cineclark/datacontainers/StudentCustomer.java" binary="false" 
     corner="BOTTOM_RIGHT">    
@@ -113,82 +103,93 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="12">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
+  <class id="11" language="java" name="org.cineclark.reports.InvoiceReport" project="CineclarkEntertainmentGroup" 
+    file="/CineclarkEntertainmentGroup/src/org/cineclark/reports/InvoiceReport.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="839" y="-17"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.ceg.ext.InvoiceData" project="CineclarkEntertainmentGroup" 
+    file="/CineclarkEntertainmentGroup/src/com/ceg/ext/InvoiceData.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="380" width="495" x="-15" y="539"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <association id="13">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="14" name="address"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="16">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="17" name="contact"/>      
-      <multiplicity id="18" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="20">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <association id="21">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="22" name="customer"/>      
-      <multiplicity id="23" minimum="0" maximum="1"/>    
+      <attribute id="14" name="address">        
+        <position height="0" width="0" x="-2" y="93"/>      
+      </attribute>      
+      <multiplicity id="15" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2" y="93"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <association id="19">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="20" name="contact">        
+        <position height="0" width="0" x="1" y="32"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1" y="32"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="24">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="25" name="salesPerson"/>      
-      <multiplicity id="26" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="27">    
+  <association id="22">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="28" name="address"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
+      <attribute id="23" name="address">        
+        <position height="0" width="0" x="-2" y="93"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2" y="93"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <association id="31">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="32" name="address"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <generalization id="35">    
+  <generalization id="25">    
     <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="36">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="37" name="productList"/>      
-      <multiplicity id="38" minimum="0" maximum="2147483647"/>    
+  <generalization id="26">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="28">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="29" name="address">        
+        <position height="0" width="0" x="-2" y="93"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-2" y="93"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

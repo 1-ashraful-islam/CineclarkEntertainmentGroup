@@ -2,117 +2,137 @@
 <products><seasonpass>
   <productCode>b29e</productCode>
   <productType>S</productType>
-  <numberOfProducts>23</numberOfProducts>
-  <seasonPassName>Winter Special</seasonPassName>
-  <startDate>2016-12-13 00:00</startDate>
-  <endDate>2017-01-07 00:00</endDate>
-  <seasonPassCost>120.0</seasonPassCost>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <seasonPassName>Spring Special</seasonPassName>
+  <startDate>2016-03-13 00:00</startDate>
+  <endDate>2016-05-07 00:00</endDate>
+  <seasonPassCost>150.0</seasonPassCost>
 </seasonpass>
 <refreshments>
   <productCode>ff23</productCode>
   <productType>R</productType>
-  <numberOfProducts>4</numberOfProducts>
-  <refreshmentName>Labatt Beer-20oz</refreshmentName>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <refreshmentName>Smoothie-10oz</refreshmentName>
   <refreshmentCost>4.99</refreshmentCost>
 </refreshments>
 <movieticket>
   <productCode>fp12</productCode>
   <productType>M</productType>
-  <numberOfProducts>2</numberOfProducts>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
   <dateTime>2016-10-21 13:10</dateTime>
-  <movieName>A Monster Calls</movieName>
+  <movieName>Enough Pizza</movieName>
   <address>
-    <street>3555 South 140th Plaza</street>
-    <city>Omaha</city>
-    <state> NE</state>
+    <street>1286 Wonder City Plaza</street>
+    <city>Gotham</city>
+    <state> AR</state>
     <zip> 68144</zip>
     <country> USA</country>
   </address>
-  <screenNo>2A</screenNo>
-  <pricePerUnit>21.5</pricePerUnit>
+  <screenNo>12A</screenNo>
+  <pricePerUnit>11.5</pricePerUnit>
 </movieticket>
 <parkingpass>
   <productCode>90fa</productCode>
   <productType>P</productType>
-  <numberOfProducts>30</numberOfProducts>
-  <optionalParameter>b29e</optionalParameter>
-  <parkingFee>25.0</parkingFee>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <parkingFee>20.0</parkingFee>
 </parkingpass>
 <movieticket>
   <productCode>1239</productCode>
   <productType>M</productType>
-  <numberOfProducts>31</numberOfProducts>
-  <dateTime>2016-09-13 15:30</dateTime>
-  <movieName>The Wild Life</movieName>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <dateTime>2017-05-03 18:40</dateTime>
+  <movieName>Infinity Gauntlet</movieName>
   <address>
-    <street>755 Willard Drive</street>
-    <city>Ashwaubenon</city>
-    <state> WI</state>
-    <zip> 54304</zip>
+    <street>755 Wilson Drive</street>
+    <city>Cair Paravel</city>
+    <state> KY</state>
+    <zip> 11110</zip>
     <country> USA</country>
   </address>
-  <screenNo>12F</screenNo>
-  <pricePerUnit>11.0</pricePerUnit>
+  <screenNo>12G</screenNo>
+  <pricePerUnit>18.0</pricePerUnit>
 </movieticket>
 <movieticket>
   <productCode>782g</productCode>
   <productType>M</productType>
-  <numberOfProducts>7</numberOfProducts>
-  <dateTime>2016-11-10 10:00</dateTime>
-  <movieName>Shut In</movieName>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <dateTime>2016-12-10 10:50</dateTime>
+  <movieName>Ring of Power</movieName>
   <address>
-    <street>6301 University Ave</street>
-    <city>Cedar Falls</city>
-    <state> IA</state>
-    <zip> 50613</zip>
+    <street>1036 Black Gate</street>
+    <city>Mordor</city>
+    <state> IL</state>
+    <zip> 31605</zip>
     <country> USA</country>
   </address>
-  <screenNo>32D</screenNo>
-  <pricePerUnit>25.0</pricePerUnit>
+  <screenNo>30D</screenNo>
+  <pricePerUnit>15.0</pricePerUnit>
 </movieticket>
 <parkingpass>
   <productCode>3289</productCode>
   <productType>P</productType>
-  <numberOfProducts>2</numberOfProducts>
-  <optionalParameter>782g</optionalParameter>
-  <parkingFee>55.0</parkingFee>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <parkingFee>75.0</parkingFee>
 </parkingpass>
 <refreshments>
   <productCode>32f4</productCode>
   <productType>R</productType>
-  <numberOfProducts>3</numberOfProducts>
-  <refreshmentName>Caramel Popcorn</refreshmentName>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <refreshmentName>Cheddar Popcorn with M&amp;Ms</refreshmentName>
   <refreshmentCost>5.5</refreshmentCost>
 </refreshments>
 <seasonpass>
   <productCode>3y92</productCode>
   <productType>S</productType>
-  <numberOfProducts>6</numberOfProducts>
-  <seasonPassName>BlackFriday Deal</seasonPassName>
-  <startDate>2016-11-24 00:00</startDate>
-  <endDate>2016-11-29 00:00</endDate>
-  <seasonPassCost>58.0</seasonPassCost>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <seasonPassName>Christmas Special</seasonPassName>
+  <startDate>2016-12-24 00:00</startDate>
+  <endDate>2017-02-28 00:00</endDate>
+  <seasonPassCost>205.0</seasonPassCost>
 </seasonpass>
 <parkingpass>
   <productCode>90fb</productCode>
   <productType>P</productType>
-  <numberOfProducts>3</numberOfProducts>
-  <parkingFee>20.0</parkingFee>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <parkingFee>30.0</parkingFee>
 </parkingpass>
 <seasonpass>
   <productCode>xer4</productCode>
   <productType>S</productType>
   <numberOfProducts>0</numberOfProducts>
-  <seasonPassName>FiveWeeks-Unlimited</seasonPassName>
+  <taxExempt>N</taxExempt>
+  <seasonPassName>TwoWeeks-Unlimited</seasonPassName>
   <startDate>2016-10-07 00:00</startDate>
-  <endDate>2016-11-11 00:00</endDate>
-  <seasonPassCost>185.0</seasonPassCost>
+  <endDate>2016-10-21 00:00</endDate>
+  <seasonPassCost>75.0</seasonPassCost>
 </seasonpass>
 <refreshments>
   <productCode>yp23</productCode>
   <productType>R</productType>
-  <numberOfProducts>4</numberOfProducts>
-  <refreshmentName>Double Cheeseburger</refreshmentName>
-  <refreshmentCost>9.0</refreshmentCost>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <refreshmentName>Chicken Tenders</refreshmentName>
+  <refreshmentCost>7.0</refreshmentCost>
 </refreshments>
+<seasonpass>
+  <productCode>sdyu</productCode>
+  <productType>S</productType>
+  <numberOfProducts>0</numberOfProducts>
+  <taxExempt>N</taxExempt>
+  <seasonPassName>Good Deal</seasonPassName>
+  <startDate>2011-11-11 00:00</startDate>
+  <endDate>2018-11-11 00:00</endDate>
+  <seasonPassCost>999.0</seasonPassCost>
+</seasonpass>
 </products>
