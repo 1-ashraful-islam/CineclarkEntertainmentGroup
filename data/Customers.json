@@ -4,26 +4,23 @@
   "type": "G",
   "customerCode": "C001",
   "contact": {
-    "personCode": "231",
-    "firstName": "Baker",
-    "lastName": "Tom",
+    "personCode": "6doc",
+    "firstName": "Brown",
+    "lastName": "Lavender",
     "address": {
-      "street": "1 Blue Jays Way",
-      "city": " Toronto",
-      "state": " ON",
-      "zip": " M5V 1J1",
-      "country": " Canada"
+      "street": "118 Border Dr.",
+      "city": " Murfreesboro",
+      "state": " TN",
+      "zip": " 37128",
+      "country": " USA"
     },
     "email": [
-      "famousdoc@who.com",
-      "tbaker@cse.unl.edu",
-      "mostfamous@whovian.com",
-      "thedoctor@bbc.com"
+      "spiderPig@aol.com"
     ]
   },
-  "name": "Clark Consultants",
+  "name": "Beirut International",
   "address": {
-    "street": "259 Concorde Suites",
+    "street": "778 Avery Hall",
     "city": "Lincoln",
     "state": "NE",
     "zip": "68588-0115",
@@ -34,27 +31,26 @@
   "type": "S",
   "customerCode": "C002",
   "contact": {
-    "personCode": "944c",
-    "firstName": "Castro",
-    "lastName": " Starlin",
+    "personCode": "2ndbest",
+    "firstName": "Fudge",
+    "lastName": "Cornelius",
     "address": {
-      "street": "1060 West Addison Street",
-      "city": "Chicago",
-      "state": "IL",
-      "zip": "60613",
+      "street": "9045 Arrowhead Street",
+      "city": " Rapid City",
+      "state": " SD",
+      "zip": " 57701",
       "country": "USA"
     },
     "email": [
-      "scastro@cubs.com",
-      "starlin_castro13@gmail.com"
+      "nonTrivial@testcases.gov"
     ]
   },
-  "name": "CAS International Fellows",
+  "name": "Super Saver",
   "address": {
-    "street": "1223 Oldfather Hall",
-    "city": "Lincoln",
+    "street": "6528 East St",
+    "city": "Gothum",
     "state": "NE",
-    "zip": "68503",
+    "zip": "68545",
     "country": "USA"
   }
 },
@@ -63,26 +59,26 @@
   "customerCode": "C003",
   "contact": {
     "personCode": "306a",
-    "firstName": "Sampson",
-    "lastName": " Brock",
+    "firstName": "Grindelwald",
+    "lastName": "Gellert",
     "address": {
-      "street": "123 N 1st Street",
-      "city": "Omaha",
-      "state": "NE",
-      "zip": "68116",
+      "street": "71 Pilgrim Avenue",
+      "city": " Chevey Chase",
+      "state": " MD",
+      "zip": " 20815",
       "country": "USA"
     },
     "email": [
-      "brock_f_sampson@gmail.com",
-      "bsampson@venture.com"
+      "the_flash@gmail.com",
+      "Lt.Jordan@adventure.com"
     ]
   },
-  "name": "Valueless Club",
+  "name": "Lex corp",
   "address": {
-    "street": "123 Venture Way",
-    "city": "Culver City",
+    "street": "48632 Boulevard",
+    "city": "Metropolis",
     "state": "CA",
-    "zip": "90230",
+    "zip": "95530",
     "country": "USA"
   }
 },
@@ -90,27 +86,26 @@
   "type": "G",
   "customerCode": "C004",
   "contact": {
-    "personCode": "321f",
-    "firstName": "Fox",
-    "lastName": " Bud",
+    "personCode": "55bb",
+    "firstName": "Granger",
+    "lastName": "Hermione",
     "address": {
-      "street": "321 Bronx Street",
-      "city": "New York",
-      "state": "NY",
-      "zip": "10004",
+      "street": "70 Bowman St",
+      "city": " South Windsor",
+      "state": " CT",
+      "zip": " 06074",
       "country": "USA"
     },
     "email": [
-      "bfox@gmail.com",
-      "csheen@crazy.net"
+      "starTrek@enterprise.gov"
     ]
   },
-  "name": "Stony Brook",
+  "name": "Apple",
   "address": {
-    "street": "9800 Savage Rd",
-    "city": "Fort Meade",
+    "street": "1563 Fireball Dropper Ave",
+    "city": "Star City",
     "state": "MD",
-    "zip": "20755",
+    "zip": "25065",
     "country": "USA"
   }
 },
@@ -118,25 +113,24 @@
   "type": "G",
   "customerCode": "C005",
   "contact": {
-    "personCode": "bbchar",
-    "firstName": "Ehrmantraut",
-    "lastName": " Kaylee",
+    "personCode": "1svndr",
+    "firstName": "Moody",
+    "lastName": "Alastor",
     "address": {
-      "street": "800 West 7th Street",
-      "city": " Albuquerque",
-      "state": " NM",
-      "zip": " 87105",
+      "street": "9596 Country Ave.",
+      "city": " Kind of Prussia",
+      "state": " PA",
+      "zip": " 19406",
       "country": "USA"
     },
     "email": [
-      "msmith@who.com",
-      "thedoc@cse.unl.edu"
+      "whoLikesDrWho@weDo.com"
     ]
   },
-  "name": "Hewlett Industries",
+  "name": "Queen Industries",
   "address": {
-    "street": "1060 West Addison",
-    "city": "Chicago",
+    "street": "0025 Double North",
+    "city": "Central City",
     "state": "IL",
     "zip": "60601",
     "country": "USA"
@@ -147,25 +141,78 @@
   "customerCode": "C006",
   "contact": {
     "personCode": "321dr",
-    "firstName": "Baker",
-    "lastName": " C.",
+    "firstName": "Crouch",
+    "lastName": "Bartemius",
     "address": {
-      "street": "Avery Hall",
-      "city": "Lincoln",
-      "state": "NE",
-      "zip": "68503",
+      "street": "8440 Studebaker Drive",
+      "city": " Portage",
+      "state": " IN",
+      "zip": " 46368",
+      "country": "USA"
+    }
+  },
+  "name": "Wayne Tech",
+  "address": {
+    "street": "819 White House Rd.",
+    "city": "Chicago",
+    "state": "NE",
+    "zip": "68450",
+    "country": "USA"
+  }
+},
+{
+  "type": "G",
+  "customerCode": "C007",
+  "contact": {
+    "personCode": "231f",
+    "firstName": "Riddle",
+    "lastName": "Tom",
+    "address": {
+      "street": " 494 Creepy Guy Way",
+      "city": " Hogwarts",
+      "state": " NE",
+      "zip": " 68504",
+      "country": " USA"
+    },
+    "email": [
+      "cyborg@watchtower.com",
+      " dprince@metroartmuseum.gov",
+      " datsyukfan101@crazy.net"
+    ]
+  },
+  "name": "Hamilton",
+  "address": {
+    "street": "1600 Pennsylvania",
+    "city": "Couch",
+    "state": "NE",
+    "zip": "68777",
+    "country": "USA"
+  }
+},
+{
+  "type": "S",
+  "customerCode": "C008",
+  "contact": {
+    "personCode": "2ndbest",
+    "firstName": "Fudge",
+    "lastName": "Cornelius",
+    "address": {
+      "street": "9045 Arrowhead Street",
+      "city": " Rapid City",
+      "state": " SD",
+      "zip": " 57701",
       "country": "USA"
     },
     "email": [
-      "dr@baker.com"
+      "nonTrivial@testcases.gov"
     ]
   },
-  "name": "Gregory Smith",
+  "name": "Hammer Tech",
   "address": {
-    "street": "456 West 7th St.",
-    "city": "Omaha",
-    "state": "NE",
-    "zip": "68500",
+    "street": "7 Street",
+    "city": "Cardiff",
+    "state": "WA",
+    "zip": "61860",
     "country": "USA"
   }
 }

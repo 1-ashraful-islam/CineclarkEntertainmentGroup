@@ -1,119 +1,139 @@
 {
 "products": [
 {
-  "seasonPassName": "Winter Special",
-  "startDate": "2016-12-13 00:00",
-  "endDate": "2017-01-07 00:00",
-  "seasonPassCost": 120.0,
+  "seasonPassName": "Spring Special",
+  "startDate": "2016-03-13 00:00",
+  "endDate": "2016-05-07 00:00",
+  "seasonPassCost": 150.0,
   "productCode": "b29e",
   "productType": "S",
-  "numberOfProducts": 23
+  "numberOfProducts": 0,
+  "taxExempt": "N"
 },
 {
-  "refreshmentName": "Labatt Beer-20oz",
+  "refreshmentName": "Smoothie-10oz",
   "refreshmentCost": 4.99,
   "productCode": "ff23",
   "productType": "R",
-  "numberOfProducts": 4
+  "numberOfProducts": 0,
+  "taxExempt": "N"
 },
 {
   "dateTime": "2016-10-21 13:10",
-  "movieName": "A Monster Calls",
+  "movieName": "Enough Pizza",
   "address": {
-    "street": "3555 South 140th Plaza",
-    "city": "Omaha",
-    "state": " NE",
+    "street": "1286 Wonder City Plaza",
+    "city": "Gotham",
+    "state": " AR",
     "zip": " 68144",
     "country": " USA"
   },
-  "screenNo": "2A",
-  "pricePerUnit": 21.5,
+  "screenNo": "12A",
+  "pricePerUnit": 11.5,
   "productCode": "fp12",
   "productType": "M",
-  "numberOfProducts": 2
-},
-{
-  "parkingFee": 25.0,
-  "productCode": "90fa",
-  "productType": "P",
-  "numberOfProducts": 30,
-  "optionalParameter": "b29e"
-},
-{
-  "dateTime": "2016-09-13 15:30",
-  "movieName": "The Wild Life",
-  "address": {
-    "street": "755 Willard Drive",
-    "city": "Ashwaubenon",
-    "state": " WI",
-    "zip": " 54304",
-    "country": " USA"
-  },
-  "screenNo": "12F",
-  "pricePerUnit": 11.0,
-  "productCode": "1239",
-  "productType": "M",
-  "numberOfProducts": 31
-},
-{
-  "dateTime": "2016-11-10 10:00",
-  "movieName": "Shut In",
-  "address": {
-    "street": "6301 University Ave",
-    "city": "Cedar Falls",
-    "state": " IA",
-    "zip": " 50613",
-    "country": " USA"
-  },
-  "screenNo": "32D",
-  "pricePerUnit": 25.0,
-  "productCode": "782g",
-  "productType": "M",
-  "numberOfProducts": 7
-},
-{
-  "parkingFee": 55.0,
-  "productCode": "3289",
-  "productType": "P",
-  "numberOfProducts": 2,
-  "optionalParameter": "782g"
-},
-{
-  "refreshmentName": "Caramel Popcorn",
-  "refreshmentCost": 5.5,
-  "productCode": "32f4",
-  "productType": "R",
-  "numberOfProducts": 3
-},
-{
-  "seasonPassName": "BlackFriday Deal",
-  "startDate": "2016-11-24 00:00",
-  "endDate": "2016-11-29 00:00",
-  "seasonPassCost": 58.0,
-  "productCode": "3y92",
-  "productType": "S",
-  "numberOfProducts": 6
+  "numberOfProducts": 0,
+  "taxExempt": "N"
 },
 {
   "parkingFee": 20.0,
+  "productCode": "90fa",
+  "productType": "P",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "dateTime": "2017-05-03 18:40",
+  "movieName": "Infinity Gauntlet",
+  "address": {
+    "street": "755 Wilson Drive",
+    "city": "Cair Paravel",
+    "state": " KY",
+    "zip": " 11110",
+    "country": " USA"
+  },
+  "screenNo": "12G",
+  "pricePerUnit": 18.0,
+  "productCode": "1239",
+  "productType": "M",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "dateTime": "2016-12-10 10:50",
+  "movieName": "Ring of Power",
+  "address": {
+    "street": "1036 Black Gate",
+    "city": "Mordor",
+    "state": " IL",
+    "zip": " 31605",
+    "country": " USA"
+  },
+  "screenNo": "30D",
+  "pricePerUnit": 15.0,
+  "productCode": "782g",
+  "productType": "M",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "parkingFee": 75.0,
+  "productCode": "3289",
+  "productType": "P",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "refreshmentName": "Cheddar Popcorn with M\u0026Ms",
+  "refreshmentCost": 5.5,
+  "productCode": "32f4",
+  "productType": "R",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "seasonPassName": "Christmas Special",
+  "startDate": "2016-12-24 00:00",
+  "endDate": "2017-02-28 00:00",
+  "seasonPassCost": 205.0,
+  "productCode": "3y92",
+  "productType": "S",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "parkingFee": 30.0,
   "productCode": "90fb",
   "productType": "P",
-  "numberOfProducts": 3
+  "numberOfProducts": 0,
+  "taxExempt": "N"
 },
 {
-  "seasonPassName": "FiveWeeks-Unlimited",
+  "seasonPassName": "TwoWeeks-Unlimited",
   "startDate": "2016-10-07 00:00",
-  "endDate": "2016-11-11 00:00",
-  "seasonPassCost": 185.0,
+  "endDate": "2016-10-21 00:00",
+  "seasonPassCost": 75.0,
   "productCode": "xer4",
   "productType": "S",
-  "numberOfProducts": 0
+  "numberOfProducts": 0,
+  "taxExempt": "N"
 },
 {
-  "refreshmentName": "Double Cheeseburger",
-  "refreshmentCost": 9.0,
+  "refreshmentName": "Chicken Tenders",
+  "refreshmentCost": 7.0,
   "productCode": "yp23",
   "productType": "R",
-  "numberOfProducts": 4
+  "numberOfProducts": 0,
+  "taxExempt": "N"
+},
+{
+  "seasonPassName": "Good Deal",
+  "startDate": "2011-11-11 00:00",
+  "endDate": "2018-11-11 00:00",
+  "seasonPassCost": 999.0,
+  "productCode": "sdyu",
+  "productType": "S",
+  "numberOfProducts": 0,
+  "taxExempt": "N"
 }
 ]}
