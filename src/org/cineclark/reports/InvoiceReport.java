@@ -8,10 +8,13 @@ import org.cineclark.datacontainers.Invoice;
 import org.cineclark.datacontainers.Product;
 import org.cineclark.fileReader.FlatFileReader;
 
+import com.ceg.ext.DBClass;
+
 public class InvoiceReport {
 
 	
 	public static void main(String[] args) {
+
 		
 		FlatFileReader flReader = new FlatFileReader(); //new instance of flatFileReader
 		List<Invoice> invoices = flReader.readInvoices(); //get the list of invoices
