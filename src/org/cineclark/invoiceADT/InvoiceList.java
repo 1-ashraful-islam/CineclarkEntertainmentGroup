@@ -7,6 +7,7 @@ import java.lang.*;
 import org.cineclark.datacontainers.Invoice;
 import org.cineclark.fileReader.FlatFileReader;
 
+
 public class InvoiceList implements Iterable<Invoice> {
 		private InvoiceNode start;
 		private InvoiceNode end;
@@ -95,10 +96,56 @@ public class InvoiceList implements Iterable<Invoice> {
 			}
 		}
 		
-		public Invoice getInvoice(int position) {
-			return null; 
-			//TODO: implement this
+		private InvoiceNode getInvoiceNodeAtIndex(int position) {
+			// get the truck that at index position
+			InvoiceNode invoiceAtIndex = start;
+					//if the index is out of range throw an error and exit
+					if (position > size || position < 0) {
+						throw new IndexOutOfBoundsException();
+					}
+					
+					//handling corner cases
+					if(position==0) {
+						return start;
+						
+					} else if(position==size) {
+						return end;
+					} else if (position<size || position >0){
+						
+						for (int i = 0; i < position; i++) {
+							invoiceAtIndex = invoiceAtIndex.getNext();
+								
+							}
+						return invoiceAtIndex;
+
+						}
+
+						return invoiceAtIndex;
+					
+					
+			//throw new UnsupportedOperationException("Not yet implemented.");
 		}
+		public Invoice getInvoice(int position) {
+			// get the truck that is before the index position
+			InvoiceNode invoiceAtIndex = null;
+			// if the index is out of range throw an error and exit
+			if (position > size || position < 0) {
+				throw new IndexOutOfBoundsException();
+			}
+			// handling corner cases
+			if (position == 0) {
+				invoiceAtIndex = start;
+
+			} else {
+
+				// get truck at index
+				invoiceAtIndex = getInvoiceNodeAtIndex(position);
+
+			}
+			return invoiceAtIndex.getInvoice();
+			// throw new UnsupportedOperationException("Not yet implemented.");
+		}
+
 		
 		
 		@Override
