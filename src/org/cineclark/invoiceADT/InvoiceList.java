@@ -6,10 +6,9 @@ import java.lang.*;
 
 import org.cineclark.datacontainers.Invoice;
 import org.cineclark.fileReader.FlatFileReader;
-import org.cineclark.invoiceADT.InvoiceListExample.IteratorInvoice;
 
 public class InvoiceList implements Iterable<Invoice> {
-		private InvoiceNode<Invoice> start;
+		private InvoiceNode start;
 		private InvoiceNode end;
 		private int size;
 		private Comparator<Invoice> comp;
@@ -21,7 +20,7 @@ public class InvoiceList implements Iterable<Invoice> {
 		 */
 
 		public InvoiceList(Comparator<Invoice> comp) {
-			this.start=null;
+			this.start =null;
 			this.size=0;
 			this.comp=comp;
 		}
@@ -33,7 +32,7 @@ public class InvoiceList implements Iterable<Invoice> {
 		}
 		
 		public void add(Invoice item) {
-			InvoiceNode<Invoice> newInvoiceNode = new InvoiceNode<Invoice>(item);
+			InvoiceNode newInvoiceNode = new InvoiceNode(item);
 			if(start == null){
 				start=newInvoiceNode;
 				end=start;
@@ -44,7 +43,7 @@ public class InvoiceList implements Iterable<Invoice> {
 				//Set the pointers as follows.
 				//new node-->start node
 				//start=new
-				if(){
+				if(true){
 					//TODO
 					size++;
 				}
@@ -60,7 +59,7 @@ public class InvoiceList implements Iterable<Invoice> {
 				}
 			}
 			else{
-				if(){
+				if(true){
 					/*
 					 * Case 1: new node is smaller than start node
 					 * Start node should be set as the next node of the new node,
@@ -71,7 +70,7 @@ public class InvoiceList implements Iterable<Invoice> {
 					//TODO
 					size++;
 				}
-				else if(){
+				else if(true){
 					/*
 					 * Case 2: New node is smaller than neighbor of the start node
 					 * The neighbor of the start node should be set as the next node
@@ -96,6 +95,11 @@ public class InvoiceList implements Iterable<Invoice> {
 			}
 		}
 		
+		public Invoice getInvoice(int position) {
+			return null; 
+			//TODO: implement this
+		}
+		
 		
 		@Override
 		public Iterator<Invoice> iterator(){
@@ -109,10 +113,12 @@ public class InvoiceList implements Iterable<Invoice> {
 			@Override
 			public boolean hasNext() {
 				//TODO
+				return false;
 			}
 			@Override
 			public Invoice next(){
 				//return getNext();
+				return null;
 			}
 			
 			@Override
