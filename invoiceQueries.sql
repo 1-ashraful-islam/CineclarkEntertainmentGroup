@@ -1,0 +1,15 @@
+SELECT * FROM Person;
+INSERT INTO Email (EmailAddress) VALUES ('darkknight@rises.gov') WHERE EmailAddress = whoLikesDrWho@weDo.com;
+UPDATE MovieTicket SET AddressID = '123 DisneyLand Way, Aniheim, CA, 12345, USA' WHERE AddressID ='44 Shirley Avenue, West Chicago, IL, 60185,USA';
+DELETE FROM MovieTicket WHERE MovieName= 'Infinity Gauntlet';
+SELECT * FROM Invoice WHERE InvoiceCode = 'INV001';
+SELECT * FROM Invoice WHERE CustomerCode= '1svndr';
+INSERT INTO InvoiceProducts (ProductID) VALUES ('ff23') WHERE InvoiceID = 'INV002';
+SELECT SUM(MovieTicketPrice) FROM MovieTicket;
+SELECT COUNT (*) FROM MovieTicket WHERE MovieDateTime= '2016-06-12';
+SELECT COUNT (InvoiceID) FROM Invoice GROUP BY SalesPersonID;
+SELECT COUNT (InvoiceID) FROM Invoice AS I JOIN InvoiceProducts AS IP ON I.InvoiceID=IP.InvoiceID JOIN Product AS P ON IP.ProductID=P.ProductID JOIN MovieTicket AS MT ON P.ProductID=MT.ProductID WHERE Movie TicketID = '___';
+SELECT SUM(MovieTicketPrice) FROM MovieTicket AS MT JOIN Product AS P ON MT.ProductID=P.ProductID JOIN InvoiceProducts AS IP on P.ProductID =IP.ProductID JOIN Invoice AS I on IP.InvoiceID=I.InvoiceID WHERE I.InvoiceDate = '2016-12-29';
+SELECT COUNT(ParkingPass) FROM ParkingPass AS PP JOIN Product AS P ON PP.ProductID=P.ProductID JOIN InvoiceProducts AS IP on P.ProductID =IP.ProductID AND SELECT COUNT(Refreshments)FROM Refreshments AS R JOIN Product AS P ON R.ProductID=P.ProductID JOIN InvoiceProducts AS IP on P.ProductID =IP.ProductID;
+SELECT InvoiceID FROM Invoice AS I JOIN InvoiceProducts AS IP ON I.InvoiceID=IP.InvoiceID JOIN Product AS P ON IP.ProductID=P.ProductID JOIN MovieTicket AS MT ON P.ProductID=MT.ProductID WHERE COUNT(MovieTicketID) >2;
+SELECT InvoiceID FROM Invoice AS I JOIN Customer AS C ON I.CustomerID=C.CustomerID WHERE I.SalesPersonID=C.CustomerPrimaryContactID;

@@ -7,6 +7,8 @@ import org.cineclark.datacontainers.Customer;
 import org.cineclark.datacontainers.Invoice;
 import org.cineclark.datacontainers.Product;
 import org.cineclark.fileReader.FlatFileReader;
+import org.cineclark.invoiceADT.InvoiceList;
+import org.cineclark.invoiceADT.TotalComparator;
 
 import com.ceg.ext.DBClass;
 
@@ -25,6 +27,10 @@ public class InvoiceReport {
 		double subInvoiceTotalTaxes=0;
 		double subInvoiceTotalDiscount=0;
 		double subInvoiceGrandTotal=0;
+		
+		//from Discussion
+		InvoiceList<Invoice> invoiceOrderedList=new InvoiceList<Invoice>(new TotalComparator());
+		
 		
 		//Executive Summary reports
 		System.out.println("========================\n Executive Summary Report\n========================");
