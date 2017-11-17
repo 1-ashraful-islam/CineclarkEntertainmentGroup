@@ -230,7 +230,7 @@ public class InvoiceData {
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					//e1.printStackTrace();
-					//if it goes into catch, unique constant probably failed, try to see if the address alredy exists in that case update the addressID or show error
+					//if it goes into catch, unique constant probably failed, try to see if the address already exists in that case update the addressID or show error
 					sql= "SELECT AddressID FROM Address WHERE Street= ? AND City= ? AND State= ? AND Zip = ? AND Country= ?";
 					try {
 						ps = conn.prepareStatement(sql);

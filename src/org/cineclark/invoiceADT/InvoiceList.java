@@ -44,8 +44,10 @@ public class InvoiceList implements Iterable<Invoice> {
 				//Set the pointers as follows.
 				//new node-->start node
 				//start=new
-				if(true){
+				if(item.compare(start.getInvoice())== 1){
 					//TODO
+					newInvoiceNode.setNext(start);
+					start=newInvoiceNode;
 					size++;
 				}
 				/*Case 2
@@ -56,11 +58,13 @@ public class InvoiceList implements Iterable<Invoice> {
 				 */
 				else{
 					//TODO
+					end.setNext(newInvoiceNode);
+					end = newInvoiceNode;
 					size++;
 				}
 			}
 			else{
-				if(true){
+				if(item.compare(inv2)== 1){
 					/*
 					 * Case 1: new node is smaller than start node
 					 * Start node should be set as the next node of the new node,
@@ -69,9 +73,11 @@ public class InvoiceList implements Iterable<Invoice> {
 					 * start=new
 					 */
 					//TODO
+					newInvoiceNode.setNext(start);
+					start=newInvoiceNode;
 					size++;
 				}
-				else if(true){
+				else if(inv1.compare(inv2)== -1){
 					/*
 					 * Case 2: New node is smaller than neighbor of the start node
 					 * The neighbor of the start node should be set as the next node
@@ -81,16 +87,34 @@ public class InvoiceList implements Iterable<Invoice> {
 					 * start node -->new node
 					 */
 					//TODO
+					InvoiceNode previousNode = new InvoiceNode(item);
+					previousNode= start;
+					int index=0;
+					for(int i=1; i<index -1; i++){
+						previousNode=previousNode.getNext();
+					}
+					InvoiceNode nextNode=previousNode.getNext();
+					newInvoiceNode.setNext(previousNode);
+					previousNode.setNext(nextNode);
 					size++;
 				}
 				else{
 					/*
-					 * Case 3: new node is great than or equal to the neighbor of
+					 * Case 3: new node is greater than or equal to the neighbor of
 					 * the start node.(current node>=current node)
 					 * current node --> new node
 					 * new node --> next node
 					 */
 					//TODO
+					InvoiceNode previousNode = new InvoiceNode(item);
+					previousNode=start;
+					int index=0;
+					for(int i=1; i<index -1; i++){
+						previousNode=previousNode.getNext();
+					}
+					InvoiceNode nextNode=previousNode.getNext();
+					previousNode.setNext(newInvoiceNode);
+					newInvoiceNode.setNext(nextNode);
 					size++;
 				}
 			}
@@ -143,8 +167,7 @@ public class InvoiceList implements Iterable<Invoice> {
 
 			}
 			return invoiceAtIndex.getInvoice();
-			// throw new UnsupportedOperationException("Not yet implemented.");
-		}
+			}
 
 		
 		
